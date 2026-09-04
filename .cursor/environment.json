@@ -4,8 +4,8 @@
   "terminals": [
     {
       "name": "web-server",
-      "command": "python3 -m http.server 8080 --bind 0.0.0.0",
-      "description": "Serves the static site (index.html) at http://localhost:8080"
+      "command": "python3 .cursor/serve.py 8080",
+      "description": "Serves the static site (index.html) at http://localhost:8080 with charset=utf-8"
     }
   ],
   "ports": [
