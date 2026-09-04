@@ -1,0 +1,17 @@
+{
+  "name": "vegarde",
+  "install": "python3 --version",
+  "terminals": [
+    {
+      "name": "web-server",
+      "command": "python3 .cursor/serve.py 8080",
+      "description": "Serves the static site (index.html) at http://localhost:8080 with charset=utf-8"
+    }
+  ],
+  "ports": [
+    {
+      "name": "web",
+      "port": 8080
+    }
+  ]
+}
