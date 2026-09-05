@@ -131,6 +131,7 @@
       if (!form.checkValidity()) {
         if (status) {
           status.hidden = false;
+          status.classList.remove("is-ok");
           status.textContent = "Merci de renseigner les champs obligatoires avant l’envoi.";
         }
         form.querySelector(":invalid")?.focus();
@@ -138,6 +139,7 @@
       }
       if (status) {
         status.hidden = false;
+        status.classList.add("is-ok");
         status.textContent =
           "Votre demande a bien été enregistrée. Nous vous recontacterons dès que les coordonnées de contact seront activées.";
       }
