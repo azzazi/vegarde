@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact — Vé Garde</title>
-  <meta name="description" content="Demander une étude de site à Vé Garde, société de sécurité privée à El Jadida.">
+  <meta name="description" content="Parlons de votre site. Demander une étude de site à Vé Garde, El Jadida.">
   <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
@@ -40,14 +40,47 @@
     <div class="wrap page-hero">
       <p class="kicker">Contact</p>
       <h1>Parlons de votre site</h1>
-      <p class="lead">Un premier échange pour comprendre votre besoin. Une visite pourra suivre.</p>
+      <p class="lead">Une première conversation suffit pour comprendre le besoin et envisager une visite.</p>
     </div>
 
     <section class="section">
       <div class="wrap contact-grid">
-        <form class="form-card" data-contact-form novalidate>
+        <div class="contact-details">
+          <p class="kicker">Vé Garde</p>
+          <h2>El Jadida, Maroc</h2>
+          <div class="info-cards">
+            <article class="info-card">
+              <span class="service-tag">Siège</span>
+              <h3>Adresse</h3>
+              <p class="placeholder">[Adresse du siège]</p>
+              <p>El Jadida, Maroc</p>
+            </article>
+            <article class="info-card">
+              <span class="service-tag">Téléphone</span>
+              <h3>Ligne directe</h3>
+              <p class="placeholder">Tél. : [Numéro de téléphone]</p>
+              <p class="placeholder">WhatsApp : [Numéro WhatsApp]</p>
+            </article>
+            <article class="info-card">
+              <span class="service-tag">Écrit</span>
+              <h3>E-mail</h3>
+              <p class="placeholder">[Adresse e-mail]</p>
+              <p class="placeholder">Web : [Site internet]</p>
+            </article>
+            <article class="info-card">
+              <span class="service-tag">Activité</span>
+              <h3>Missions</h3>
+              <p>Sécurité privée · Gardiennage · Surveillance</p>
+            </article>
+          </div>
+        </div>
+
+        <form class="form-card" data-contact-form>
+          <p class="kicker">Demande</p>
+          <h3>Étude de site</h3>
+          <p>Décrivez votre besoin. Nous reviendrons vers vous pour préciser le dispositif.</p>
           <div class="field">
-            <label for="name">Nom *</label>
+            <label for="name">Nom</label>
             <input id="name" name="name" type="text" autocomplete="name" required>
           </div>
           <div class="field">
@@ -55,17 +88,17 @@
             <input id="company" name="company" type="text" autocomplete="organization">
           </div>
           <div class="field">
-            <label for="phone">Téléphone *</label>
+            <label for="phone">Téléphone</label>
             <input id="phone" name="phone" type="tel" autocomplete="tel" required>
           </div>
           <div class="field">
-            <label for="email">E-mail *</label>
+            <label for="email">E-mail</label>
             <input id="email" name="email" type="email" autocomplete="email" required>
           </div>
           <div class="field">
-            <label for="site-type">Type de site *</label>
+            <label for="site-type">Type de site</label>
             <select id="site-type" name="site-type" required>
-              <option value="">Choisir</option>
+              <option value="">Sélectionner</option>
               <option>Chantier / site en construction</option>
               <option>Résidence / copropriété</option>
               <option>Commerce / local professionnel</option>
@@ -73,45 +106,14 @@
             </select>
           </div>
           <div class="field">
-            <label for="message">Votre besoin (horaires, accès, enjeux) *</label>
-            <textarea id="message" name="message" required></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Horaires, accès, enjeux particuliers…"></textarea>
           </div>
           <div>
             <button class="btn btn-red" type="submit">Envoyer la demande</button>
           </div>
           <p class="form-status" data-form-status hidden></p>
         </form>
-
-        <aside class="contact-info">
-          <img src="img/office.jpg" alt="Espace de travail lumineux" width="1600" height="1068" loading="lazy">
-          <div class="info-line">
-            <span class="icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
-            </span>
-            <div>
-              <h3>Adresse</h3>
-              <p>El Jadida, Maroc · <span class="placeholder">[Adresse du siège]</span></p>
-            </div>
-          </div>
-          <div class="info-line">
-            <span class="icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
-            </span>
-            <div>
-              <h3>Téléphone / WhatsApp</h3>
-              <p><span class="placeholder">Tél. [Numéro]</span> · WhatsApp <span class="placeholder">[Numéro]</span></p>
-            </div>
-          </div>
-          <div class="info-line">
-            <span class="icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-            </span>
-            <div>
-              <h3>E-mail</h3>
-              <p><span class="placeholder">[E-mail]</span></p>
-            </div>
-          </div>
-        </aside>
       </div>
     </section>
   </main>
