@@ -32,50 +32,61 @@
       </nav>
       <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
       <nav class="nav-mobile" id="menu-mobile" data-menu>
-      <a href="index.html">00 Ensemble</a>
-      <a href="approche.html">01 Méthode</a>
-      <a href="services.html" aria-current="page">02 Fiches</a>
-      <a href="secteurs.html">03 Sites</a>
-      <a href="contact.html">04 Étude</a>
-    </nav>
+        <a href="index.html">00 Ensemble</a>
+        <a href="approche.html">01 Méthode</a>
+        <a href="services.html" aria-current="page">02 Fiches</a>
+        <a href="secteurs.html">03 Sites</a>
+        <a href="contact.html">04 Étude</a>
+      </nav>
     </header>
 
     <main id="contenu" class="sheet-body">
       <div class="page-intro">
-        <h1>Les fiches, sur la table.</h1>
-        <p>Une prestation n’est pas un catalogue. Ce sont six papiers que l’agent et le client peuvent tenir. Cliquez une feuille pour la lire au premier plan.</p>
+        <h1>Classeur de poste.</h1>
+        <p>Une prestation n’est pas un catalogue. C’est un classeur : six fiches, une à la fois, celle que l’agent et le client peuvent tenir.</p>
       </div>
-      <div class="desk" data-desk data-mode="stack">
-        <button class="paper" type="button">
-          <span class="code">VG-SRV-01 · Gardiennage</span>
-          <h2>Présence sur site</h2>
-          <p>Présence d’agents de sécurité sur site selon les horaires et le dispositif définis avec le client. Surveillance des accès, des installations, des espaces extérieurs et des zones définies comme sensibles.</p>
-        </button>
-        <button class="paper" type="button">
-          <span class="code">VG-SRV-02 · Surveillance</span>
-          <h2>Détecter, signaler</h2>
-          <p>Une présence attentive destinée à détecter et signaler les situations inhabituelles, les anomalies ou les comportements nécessitant une attention particulière. Organisée selon la configuration du site.</p>
-        </button>
-        <button class="paper" type="button">
-          <span class="code">VG-SRV-03 · Contrôle d’accès</span>
-          <h2>Filtrer le seuil</h2>
-          <p>Contrôle et filtrage des entrées et sorties selon les procédures établies : employés et résidents, visiteurs, fournisseurs et prestataires, véhicules, matériels et équipements.</p>
-        </button>
-        <button class="paper" type="button">
-          <span class="code">VG-SRV-04 · Rondes</span>
-          <h2>Parcourir le site</h2>
-          <p>Des rondes organisées selon les caractéristiques du site et les consignes définies. Vérifier les zones concernées, identifier les anomalies, signaler ce qui demande une action.</p>
-        </button>
-        <button class="paper" type="button">
-          <span class="code">VG-SRV-05 · Consignes</span>
-          <h2>Le cadre d’intervention</h2>
-          <p>Les agents interviennent dans le cadre de consignes définies pour le site : règles d’accès, points de contrôle, rondes, situations à signaler et procédures en cas d’incident.</p>
-        </button>
-        <button class="paper" type="button">
-          <span class="code">VG-SRV-06 · Signalement</span>
-          <h2>Rendre lisible</h2>
-          <p>Les événements et anomalies observés peuvent être consignés et remontés selon les procédures convenues. Traçabilité de la prestation, communication claire entre le site et Vé Garde.</p>
-        </button>
+      <div class="classeur" data-classeur>
+        <div class="onglets" role="tablist" aria-label="Fiches de poste">
+          <button type="button" role="tab" data-tab="1" aria-selected="true" aria-controls="fiche-1"><b>01</b>Gardiennage</button>
+          <button type="button" role="tab" data-tab="2" aria-selected="false" aria-controls="fiche-2"><b>02</b>Surveillance</button>
+          <button type="button" role="tab" data-tab="3" aria-selected="false" aria-controls="fiche-3"><b>03</b>Accès</button>
+          <button type="button" role="tab" data-tab="4" aria-selected="false" aria-controls="fiche-4"><b>04</b>Rondes</button>
+          <button type="button" role="tab" data-tab="5" aria-selected="false" aria-controls="fiche-5"><b>05</b>Consignes</button>
+          <button type="button" role="tab" data-tab="6" aria-selected="false" aria-controls="fiche-6"><b>06</b>Signalement</button>
+        </div>
+        <div class="classeur-page">
+          <div class="rings" aria-hidden="true"><i></i><i></i><i></i></div>
+          <article class="fiche-sheet" id="fiche-1" role="tabpanel" data-panel="1">
+            <p class="code">VG-SRV-01 · Gardiennage</p>
+            <h2>Présence sur site</h2>
+            <p>Présence d’agents de sécurité sur site selon les horaires et le dispositif définis avec le client. Surveillance des accès, des installations, des espaces extérieurs et des zones définies comme sensibles.</p>
+          </article>
+          <article class="fiche-sheet" id="fiche-2" role="tabpanel" data-panel="2" hidden>
+            <p class="code">VG-SRV-02 · Surveillance</p>
+            <h2>Détecter, signaler</h2>
+            <p>Une présence attentive destinée à détecter et signaler les situations inhabituelles, les anomalies ou les comportements nécessitant une attention particulière. Organisée selon la configuration du site.</p>
+          </article>
+          <article class="fiche-sheet" id="fiche-3" role="tabpanel" data-panel="3" hidden>
+            <p class="code">VG-SRV-03 · Contrôle d’accès</p>
+            <h2>Filtrer le seuil</h2>
+            <p>Contrôle et filtrage des entrées et sorties selon les procédures établies : employés et résidents, visiteurs, fournisseurs et prestataires, véhicules, matériels et équipements.</p>
+          </article>
+          <article class="fiche-sheet" id="fiche-4" role="tabpanel" data-panel="4" hidden>
+            <p class="code">VG-SRV-04 · Rondes</p>
+            <h2>Parcourir le site</h2>
+            <p>Des rondes organisées selon les caractéristiques du site et les consignes définies. Vérifier les zones concernées, identifier les anomalies, signaler ce qui demande une action.</p>
+          </article>
+          <article class="fiche-sheet" id="fiche-5" role="tabpanel" data-panel="5" hidden>
+            <p class="code">VG-SRV-05 · Consignes</p>
+            <h2>Le cadre d’intervention</h2>
+            <p>Les agents interviennent dans le cadre de consignes définies pour le site : règles d’accès, points de contrôle, rondes, situations à signaler et procédures en cas d’incident.</p>
+          </article>
+          <article class="fiche-sheet" id="fiche-6" role="tabpanel" data-panel="6" hidden>
+            <p class="code">VG-SRV-06 · Signalement</p>
+            <h2>Rendre lisible</h2>
+            <p>Les événements et anomalies observés peuvent être consignés et remontés selon les procédures convenues. Traçabilité de la prestation, communication claire entre le site et Vé Garde.</p>
+          </article>
+        </div>
       </div>
     </main>
 

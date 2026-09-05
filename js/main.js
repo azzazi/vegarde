@@ -5,8 +5,9 @@
   const form = document.querySelector("[data-contact-form]");
   const planHost = document.querySelector("[data-plan-host]");
   const toolbar = document.querySelector("[data-plan-switch]");
-  const callouts = document.querySelectorAll("[data-hot]");
-  const desk = document.querySelector("[data-desk]");
+  const legend = document.querySelector("[data-legend]");
+  const note = document.querySelector("[data-plan-note]");
+  const classeur = document.querySelector("[data-classeur]");
 
   if (year) year.textContent = String(new Date().getFullYear());
 
@@ -37,7 +38,7 @@
     if (!planHost) return;
     planHost.querySelectorAll("[data-site-plan]").forEach((group) => {
       if (group.getAttribute("data-site-plan") === name) group.removeAttribute("hidden");
-      else group.setAttribute("hidden", "");
+      else group.setAttribute("hidden", "hidden");
     });
     if (toolbar) {
       toolbar.querySelectorAll("button").forEach((btn) => {
@@ -47,57 +48,79 @@
   };
 
   const setHot = (id) => {
-    if (!planHost) return;
-    planHost.querySelectorAll(".hot").forEach((node) => {
-      node.classList.toggle("is-on", node.getAttribute("data-hot") === id);
-    });
-    callouts.forEach((item) => {
-      item.classList.toggle("is-on", item.getAttribute("data-hot") === id);
-    });
-  };
-
-  const bindPlan = () => {
-    if (toolbar) {
-      toolbar.querySelectorAll("button").forEach((btn) => {
-        btn.addEventListener("click", () => setSite(btn.dataset.site));
+    if (!id) return;
+    if (planHost) {
+      planHost.querySelectorAll("[data-hot]").forEach((node) => {
+        node.classList.toggle("is-on", node.getAttribute("data-hot") === id);
       });
     }
-    callouts.forEach((item) => {
-      const activate = () => setHot(item.getAttribute("data-hot"));
-      item.addEventListener("mouseenter", activate);
-      item.addEventListener("focus", activate);
-      item.addEventListener("click", activate);
-    });
-    planHost.querySelectorAll(".hot").forEach((node) => {
-      node.style.cursor = "pointer";
-      node.addEventListener("click", () => setHot(node.getAttribute("data-hot")));
-    });
-    setSite(toolbar?.querySelector("[aria-pressed='true']")?.dataset.site || "residence");
-    setHot("p1");
+    if (legend) {
+      legend.querySelectorAll("[data-hot]").forEach((item) => {
+        const on = item.getAttribute("data-hot") === id;
+        item.classList.toggle("is-on", on);
+        if (on && note) note.innerHTML = item.innerHTML;
+      });
+    }
   };
 
+  if (toolbar) {
+    toolbar.addEventListener("click", (event) => {
+      const btn = event.target.closest("[data-site]");
+      if (!btn) return;
+      setSite(btn.dataset.site);
+      const current = legend?.querySelector("[data-hot].is-on")?.getAttribute("data-hot") || "p1";
+      setHot(current);
+    });
+  }
+
+  if (legend) {
+    const activate = (event) => {
+      const item = event.target.closest("[data-hot]");
+      if (item) setHot(item.getAttribute("data-hot"));
+    };
+    legend.addEventListener("mouseover", activate);
+    legend.addEventListener("focusin", activate);
+    legend.addEventListener("click", activate);
+  }
+
   if (planHost) {
+    const fromPlan = (event) => {
+      const hot = event.target.closest("[data-hot]");
+      if (hot) setHot(hot.getAttribute("data-hot"));
+    };
+    planHost.addEventListener("mouseover", fromPlan);
+    planHost.addEventListener("click", fromPlan);
+
     fetch("img/plan-site.svg")
       .then((res) => res.text())
       .then((markup) => {
         planHost.innerHTML = markup;
-        bindPlan();
+        const start = toolbar?.querySelector("[aria-pressed='true']")?.dataset.site || "residence";
+        setSite(start);
+        setHot("p1");
       })
       .catch(() => {
         planHost.textContent = "Plan indisponible.";
       });
   }
 
-  if (desk) {
-    const papers = [...desk.querySelectorAll(".paper")];
-    const show = (target) => {
-      papers.forEach((paper) => paper.classList.toggle("is-front", paper === target));
+  if (classeur) {
+    const tabs = [...classeur.querySelectorAll("[data-tab]")];
+    const panels = [...classeur.querySelectorAll("[data-panel]")];
+    const show = (id) => {
+      tabs.forEach((tab) => {
+        const on = tab.dataset.tab === id;
+        tab.setAttribute("aria-selected", String(on));
+      });
+      panels.forEach((panel) => {
+        panel.hidden = panel.dataset.panel !== id;
+      });
     };
-    papers.forEach((paper) => {
-      paper.addEventListener("click", () => show(paper));
-      paper.addEventListener("focus", () => show(paper));
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => show(tab.dataset.tab));
     });
-    if (papers[0]) show(papers[0]);
+    const current = tabs.find((tab) => tab.getAttribute("aria-selected") === "true") || tabs[0];
+    if (current) show(current.dataset.tab);
   }
 
   if (form) {

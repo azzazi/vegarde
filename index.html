@@ -32,23 +32,28 @@
       </nav>
       <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
       <nav class="nav-mobile" id="menu-mobile" data-menu>
-      <a href="index.html" aria-current="page">00 Ensemble</a>
-      <a href="approche.html">01 Méthode</a>
-      <a href="services.html">02 Fiches</a>
-      <a href="secteurs.html">03 Sites</a>
-      <a href="contact.html">04 Étude</a>
-    </nav>
+        <a href="index.html" aria-current="page">00 Ensemble</a>
+        <a href="approche.html">01 Méthode</a>
+        <a href="services.html">02 Fiches</a>
+        <a href="secteurs.html">03 Sites</a>
+        <a href="contact.html">04 Étude</a>
+      </nav>
     </header>
 
     <main id="contenu" class="sheet-body">
       <div class="board">
         <div class="drawing">
+          <div class="drawing-head">
+            <span><b>Calque</b> — type de terrain</span>
+            <span>El Jadida · N</span>
+          </div>
           <div class="plan-toolbar" data-plan-switch>
             <button type="button" data-site="chantier">Chantier</button>
             <button type="button" data-site="residence" aria-pressed="true">Résidence</button>
             <button type="button" data-site="commerce">Commerce</button>
           </div>
           <div class="plan-host" data-plan-host>Chargement du plan…</div>
+          <p class="plan-readout" data-plan-note><b>1</b><span>Accès — contrôle et filtrage des entrées et sorties.</span></p>
           <nav class="scalebar" aria-label="Méthode — échelle du dispositif">
             <a href="approche.html#p1"><b>1</b>Analyse</a>
             <a href="approche.html#p2"><b>2</b>Visite</a>
@@ -58,9 +63,9 @@
             <a href="approche.html#p6"><b>6</b>Suivi</a>
           </nav>
         </div>
-        <aside class="legend">
-          <h1>Une présence organisée. Une vigilance constante.</h1>
-          <p class="lead">Ceci n’est pas une page d’accueil. C’est le plan d’un site. Vé Garde lit un terrain comme un dessin : accès, flux, postes, rondes.</p>
+        <aside class="legend" data-legend>
+          <p class="legend-kicker">Légende du dispositif</p>
+          <p class="lead">Ceci n’est pas une page d’accueil. C’est le plan d’un site. Vé Garde lit un terrain comme un dessin : accès, flux, postes, rondes. Un repère allume la zone correspondante.</p>
           <ol class="callouts">
             <li data-hot="p1" tabindex="0"><b>1</b><span>Accès — contrôle et filtrage des entrées et sorties.</span></li>
             <li data-hot="p2" tabindex="0"><b>2</b><span>Locaux — surveillance des bâtiments et installations.</span></li>
@@ -71,7 +76,7 @@
           </ol>
           <div class="actions">
             <a class="btn btn-stamp" href="contact.html">Ouvrir une étude de site</a>
-            <a class="btn" href="approche.html">Lire la méthode</a>
+            <a class="btn" href="approche.html">Déplier la méthode</a>
           </div>
         </aside>
       </div>
@@ -79,7 +84,7 @@
       <section class="notice">
         <h2>Note de service</h2>
         <p>Vé Garde est une société marocaine spécialisée dans la sécurité privée, dédiée au gardiennage et à la surveillance des sites professionnels, résidentiels et en construction.</p>
-        <p>Notre approche repose sur une organisation adaptée à chaque site : comprendre les besoins, définir les consignes, organiser la présence des agents et assurer le suivi de la prestation. Changez le type de site sur le plan — le dessin change, la méthode reste.</p>
+        <p>Notre approche repose sur une organisation adaptée à chaque site : comprendre les besoins, définir les consignes, organiser la présence des agents et assurer le suivi de la prestation. Changez le calque du plan — le dessin change, la méthode reste.</p>
         <figure class="annex">
           <img src="img/agents.jpg" alt="Immeuble contemporain, annexe photographique" width="1800" height="2400">
           <p>Annexe photo — présence sur le terrain. L’agent est le premier contact du site. Sélection, présentation, ponctualité, vigilance, respect des consignes.</p>
