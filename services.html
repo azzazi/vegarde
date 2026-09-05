@@ -37,29 +37,64 @@
   </nav>
 
   <main id="contenu">
-    <div class="wrap page-hero">
-      <p class="kicker">Nos services</p>
-      <h1>Une prestation structurée</h1>
-      <p class="lead">Six éléments, un même fil conducteur : une présence organisée, des consignes claires, un suivi régulier.</p>
-    </div>
+    <header class="page-intro">
+      <div class="wrap prose">
+        <p class="kicker">Nos services</p>
+        <h1>Une prestation structurée</h1>
+        <p class="lead">Six éléments, un même fil conducteur : une présence organisée, des consignes claires, un suivi régulier.</p>
+      </div>
+    </header>
 
-    <section class="section">
-      <div class="wrap detail">
-        <article class="detail-item" id="gardiennage">
-          <span class="service-tag">01 — Gardiennage</span>
-          <h2>Présence d’agents de sécurité sur site</h2>
+    <article class="service-block" id="gardiennage">
+      <div class="wrap service-grid">
+        <div>
+          <div class="service-head">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6z"/></svg>
+            </span>
+            <div>
+              <p class="kicker">01 — Gardiennage</p>
+              <h2>Présence d’agents de sécurité sur site</h2>
+            </div>
+          </div>
           <p>Présence d’agents de sécurité sur site selon les horaires et le dispositif définis avec le client.</p>
           <p>La mission peut notamment comprendre la surveillance des accès, des installations, des espaces extérieurs et des zones définies comme sensibles.</p>
-        </article>
-        <article class="detail-item" id="surveillance">
-          <span class="service-tag">02 — Surveillance</span>
-          <h2>Détecter et signaler</h2>
+        </div>
+        <img src="img/presence.jpg" alt="Présence sur site" width="1600" height="1067" loading="lazy">
+      </div>
+    </article>
+
+    <article class="service-block service-block--reverse" id="surveillance">
+      <div class="wrap service-grid">
+        <div>
+          <div class="service-head">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="2.5"/></svg>
+            </span>
+            <div>
+              <p class="kicker">02 — Surveillance</p>
+              <h2>Détecter et signaler</h2>
+            </div>
+          </div>
           <p>Une présence attentive destinée à détecter et signaler les situations inhabituelles, les anomalies ou les comportements nécessitant une attention particulière.</p>
           <p>La surveillance est organisée selon la configuration et les contraintes du site.</p>
-        </article>
-        <article class="detail-item" id="acces">
-          <span class="service-tag">03 — Contrôle d’accès</span>
-          <h2>Filtrer les entrées et les sorties</h2>
+        </div>
+        <img src="img/hero.jpg" alt="Surveillance attentive" width="1600" height="1067" loading="lazy">
+      </div>
+    </article>
+
+    <article class="service-block service-block--soft service-block--full" id="acces">
+      <div class="wrap service-grid">
+        <div class="prose">
+          <div class="service-head">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/></svg>
+            </span>
+            <div>
+              <p class="kicker">03 — Contrôle d’accès</p>
+              <h2>Filtrer les entrées et les sorties</h2>
+            </div>
+          </div>
           <p>Contrôle et filtrage des entrées et sorties selon les procédures établies avec le client.</p>
           <p>Selon les besoins du site, cela peut concerner :</p>
           <ul class="bullet-list">
@@ -69,28 +104,67 @@
             <li>les véhicules ;</li>
             <li>les matériels et équipements.</li>
           </ul>
-        </article>
-        <article class="detail-item" id="rondes">
-          <span class="service-tag">04 — Rondes de surveillance</span>
-          <h2>Vérifier le périmètre</h2>
+        </div>
+      </div>
+    </article>
+
+    <article class="service-block" id="rondes">
+      <div class="wrap service-grid">
+        <div>
+          <div class="service-head">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19c0-6 4-7 8-7s8 1 8 7"/><path d="M4 5h6M4 9h4"/><circle cx="17" cy="6" r="2.5"/></svg>
+            </span>
+            <div>
+              <p class="kicker">04 — Rondes de surveillance</p>
+              <h2>Vérifier le périmètre</h2>
+            </div>
+          </div>
           <p>Des rondes organisées selon les caractéristiques du site et les consignes définies.</p>
           <p>Elles permettent de vérifier les zones concernées, d’identifier les anomalies et de signaler toute situation nécessitant une attention ou une action appropriée.</p>
-        </article>
-        <article class="detail-item" id="consignes">
-          <span class="service-tag">05 — Gestion des consignes</span>
-          <h2>Un cadre d’intervention précis</h2>
+        </div>
+        <img src="img/inspection.jpg" alt="Rondes de surveillance" width="1600" height="1060" loading="lazy">
+      </div>
+    </article>
+
+    <article class="service-block service-block--reverse" id="consignes">
+      <div class="wrap service-grid">
+        <div>
+          <div class="service-head">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>
+            </span>
+            <div>
+              <p class="kicker">05 — Gestion des consignes</p>
+              <h2>Un cadre d’intervention précis</h2>
+            </div>
+          </div>
           <p>Les agents interviennent dans le cadre de consignes définies pour le site.</p>
           <p>Ces consignes précisent notamment les règles d’accès, les points de contrôle, les rondes, les situations à signaler et les procédures à suivre en cas d’incident.</p>
-        </article>
-        <article class="detail-item" id="reporting">
-          <span class="service-tag">06 — Signalement &amp; reporting</span>
-          <h2>Rendre la prestation lisible</h2>
+        </div>
+        <img src="img/method.jpg" alt="Consignes de sécurité" width="1600" height="1067" loading="lazy">
+      </div>
+    </article>
+
+    <article class="service-block" id="reporting">
+      <div class="wrap service-grid">
+        <div>
+          <div class="service-head">
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 10-12 0c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M10 21h4"/></svg>
+            </span>
+            <div>
+              <p class="kicker">06 — Signalement &amp; reporting</p>
+              <h2>Rendre la prestation lisible</h2>
+            </div>
+          </div>
           <p>Les événements et anomalies observés sur le site peuvent être consignés et remontés selon les procédures convenues avec le client.</p>
           <p>L’objectif est de permettre une meilleure traçabilité de la prestation et une communication claire entre le site et Vé Garde.</p>
-        </article>
-        <p style="margin-top:0.5rem"><a class="btn btn-red" href="contact.html">Demander une étude de site</a></p>
+          <p style="margin-top:1.5rem"><a class="btn btn-red" href="contact.html">Demander une étude de site</a></p>
+        </div>
+        <img src="img/commerce.jpg" alt="Signalement et reporting" width="1600" height="1068" loading="lazy">
       </div>
-    </section>
+    </article>
   </main>
 
   <footer class="foot">

@@ -36,86 +36,100 @@
     <a class="btn btn-red" href="contact.html">Demander une étude</a>
   </nav>
 
-  <main id="contenu">
-    <div class="wrap page-hero">
-      <p class="kicker">Contact</p>
-      <h1>Parlons de votre site</h1>
-      <p class="lead">Une première conversation suffit pour comprendre le besoin et envisager une visite.</p>
-    </div>
+  <main id="contenu" class="contact-page">
+    <div class="contact-aside">
+      <div class="wrap">
+        <p class="kicker">Contact</p>
+        <h1>Parlons de votre site</h1>
+        <p class="lead">Une première conversation suffit pour comprendre le besoin et envisager une visite.</p>
 
-    <section class="section">
-      <div class="wrap contact-grid">
-        <div class="contact-details">
-          <p class="kicker">Vé Garde</p>
-          <h2>El Jadida, Maroc</h2>
-          <div class="info-cards">
-            <article class="info-card">
-              <span class="service-tag">Siège</span>
-              <h3>Adresse</h3>
-              <p class="placeholder">[Adresse du siège]</p>
-              <p>El Jadida, Maroc</p>
-            </article>
-            <article class="info-card">
-              <span class="service-tag">Téléphone</span>
-              <h3>Ligne directe</h3>
-              <p class="placeholder">Tél. : [Numéro de téléphone]</p>
-              <p class="placeholder">WhatsApp : [Numéro WhatsApp]</p>
-            </article>
-            <article class="info-card">
-              <span class="service-tag">Écrit</span>
-              <h3>E-mail</h3>
-              <p class="placeholder">[Adresse e-mail]</p>
-              <p class="placeholder">Web : [Site internet]</p>
-            </article>
-            <article class="info-card">
-              <span class="service-tag">Activité</span>
-              <h3>Missions</h3>
-              <p>Sécurité privée · Gardiennage · Surveillance</p>
-            </article>
+        <div class="process-steps" aria-label="Étapes après votre demande">
+          <div class="process-step">
+            <span class="num">01</span>
+            <div>
+              <h3>Échange</h3>
+              <p>Vous décrivez votre site, vos horaires et vos enjeux.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <span class="num">02</span>
+            <div>
+              <h3>Visite</h3>
+              <p>Nous lisons le terrain : accès, flux, zones sensibles.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <span class="num">03</span>
+            <div>
+              <h3>Dispositif</h3>
+              <p>Nous définissons ensemble un cadre adapté, sans solution standard.</p>
+            </div>
           </div>
         </div>
 
-        <form class="form-card" data-contact-form>
-          <p class="kicker">Demande</p>
-          <h3>Étude de site</h3>
-          <p>Décrivez votre besoin. Nous reviendrons vers vous pour préciser le dispositif.</p>
-          <div class="field">
-            <label for="name">Nom</label>
-            <input id="name" name="name" type="text" autocomplete="name" required>
-          </div>
-          <div class="field">
-            <label for="company">Société / site</label>
-            <input id="company" name="company" type="text" autocomplete="organization">
-          </div>
-          <div class="field">
-            <label for="phone">Téléphone</label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel" required>
-          </div>
-          <div class="field">
-            <label for="email">E-mail</label>
-            <input id="email" name="email" type="email" autocomplete="email" required>
-          </div>
-          <div class="field">
-            <label for="site-type">Type de site</label>
-            <select id="site-type" name="site-type" required>
-              <option value="">Sélectionner</option>
-              <option>Chantier / site en construction</option>
-              <option>Résidence / copropriété</option>
-              <option>Commerce / local professionnel</option>
-              <option>Autre</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required placeholder="Horaires, accès, enjeux particuliers…"></textarea>
+        <dl class="info-list">
+          <div>
+            <dt>Siège</dt>
+            <dd class="placeholder">[Adresse du siège]</dd>
+            <dd>El Jadida, Maroc</dd>
           </div>
           <div>
-            <button class="btn btn-red" type="submit">Envoyer la demande</button>
+            <dt>Téléphone</dt>
+            <dd class="placeholder">Tél. : [Numéro de téléphone]</dd>
+            <dd class="placeholder">WhatsApp : [Numéro WhatsApp]</dd>
           </div>
-          <p class="form-status" data-form-status hidden></p>
-        </form>
+          <div>
+            <dt>Écrit</dt>
+            <dd class="placeholder">[Adresse e-mail]</dd>
+            <dd class="placeholder">Web : [Site internet]</dd>
+          </div>
+          <div>
+            <dt>Activité</dt>
+            <dd>Sécurité privée · Gardiennage · Surveillance</dd>
+          </div>
+        </dl>
       </div>
-    </section>
+    </div>
+
+    <div class="contact-form-wrap">
+      <form class="form-panel" data-contact-form>
+        <p class="kicker">Demande</p>
+        <h2>Étude de site</h2>
+        <p>Décrivez votre besoin. Nous reviendrons vers vous pour préciser le dispositif.</p>
+        <div class="field">
+          <label for="name">Nom</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="company">Société / site</label>
+          <input id="company" name="company" type="text" autocomplete="organization">
+        </div>
+        <div class="field">
+          <label for="phone">Téléphone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="site-type">Type de site</label>
+          <select id="site-type" name="site-type" required>
+            <option value="">Sélectionner</option>
+            <option>Chantier / site en construction</option>
+            <option>Résidence / copropriété</option>
+            <option>Commerce / local professionnel</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required placeholder="Horaires, accès, enjeux particuliers…"></textarea>
+        </div>
+        <button class="btn btn-red" type="submit">Envoyer la demande</button>
+        <p class="form-status" data-form-status hidden></p>
+      </form>
+    </div>
   </main>
 
   <footer class="foot">
