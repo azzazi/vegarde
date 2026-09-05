@@ -3,106 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vé Garde — Planche 04 · Étude de site</title>
+  <title>Contact — Vé Garde</title>
   <meta name="description" content="Demander une étude de site à Vé Garde, El Jadida.">
-  <meta name="theme-color" content="#eae2d0">
+  <meta name="theme-color" content="#07090d">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
-  <div class="sheet">
-    <header class="sheet-head">
-      <a class="brand" href="index.html" aria-label="Vé Garde — Accueil">
-        <span class="stamp">VG</span>
-        <span>
-          <span class="brand-name">VÉ GARDE</span>
-          <span class="brand-meta">Planche 04 — Étude de site</span>
-        </span>
-      </a>
-      <nav class="nav-desktop" aria-label="Planches">
-        <a href="index.html"><b>00</b>Ensemble</a>
-        <a href="approche.html"><b>01</b>Méthode</a>
-        <a href="services.html"><b>02</b>Fiches</a>
-        <a href="secteurs.html"><b>03</b>Sites</a>
-        <a href="contact.html" aria-current="page"><b>04</b>Étude</a>
-      </nav>
-      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
-      <nav class="nav-mobile" id="menu-mobile" data-menu>
-      <a href="index.html">00 Ensemble</a>
-      <a href="approche.html">01 Méthode</a>
-      <a href="services.html">02 Fiches</a>
-      <a href="secteurs.html">03 Sites</a>
-      <a href="contact.html" aria-current="page">04 Étude</a>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header class="top">
+    <a class="brand" href="index.html" aria-label="Vé Garde — Accueil"><i></i>Vé Garde</a>
+    <nav class="nav-desk" aria-label="Principal">
+      <a href="index.html">Accueil</a>
+      <a href="approche.html">Méthode</a>
+      <a href="services.html">Missions</a>
+      <a href="secteurs.html">Sites</a>
+      <a href="contact.html" aria-current="page">Contact</a>
     </nav>
-    </header>
+    <button class="burger" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
+  </header>
+  <nav class="nav-mob" id="menu-mobile" data-menu>
+    <a href="index.html">Accueil</a>
+    <a href="approche.html">Méthode</a>
+    <a href="services.html">Missions</a>
+    <a href="secteurs.html">Sites</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </nav>
 
-    <main id="contenu" class="sheet-body">
-      <form class="cerfa" data-contact-form novalidate>
-        <div class="cerfa-head">
-          <div>
-            <h1>Fiche d’étude de site</h1>
-            <p>À remplir pour un premier échange. Une visite pourra suivre.</p>
-          </div>
-          <span class="stamp">VG</span>
-        </div>
-        <div class="cerfa-grid">
-          <div class="cell">
-            <label for="name">Nom</label>
-            <input id="name" name="name" type="text" autocomplete="name" required>
-          </div>
-          <div class="cell">
-            <label for="company">Société / site</label>
-            <input id="company" name="company" type="text" autocomplete="organization">
-          </div>
-          <div class="cell">
-            <label for="phone">Téléphone</label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel" required>
-          </div>
-          <div class="cell">
-            <label for="email">E-mail</label>
-            <input id="email" name="email" type="email" autocomplete="email" required>
-          </div>
-          <div class="cell span-2">
-            <label for="site-type">Type de terrain</label>
-            <select id="site-type" name="site-type" required>
-              <option value="">Cocher le dessin correspondant</option>
-              <option>Chantier / site en construction</option>
-              <option>Résidence / copropriété</option>
-              <option>Commerce / local professionnel</option>
-              <option>Autre</option>
-            </select>
-          </div>
-          <div class="cell span-2">
-            <label for="message">Observations (horaires, accès, enjeux)</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-        </div>
-        <div class="cerfa-actions">
-          <button class="btn btn-stamp" type="submit">Déposer la fiche</button>
-          <p class="form-status" data-form-status hidden></p>
-        </div>
-      </form>
-      <p class="carbon">Exemplaire bureau — à conserver au dossier · copie client après visite</p>
-      <section class="notice">
-        <h2>Correspondance</h2>
-        <p>El Jadida, Maroc · <span class="placeholder">[Adresse du siège]</span> · <span class="placeholder">Tél. [Numéro]</span> · <span class="placeholder">[E-mail]</span> · WhatsApp <span class="placeholder">[Numéro]</span></p>
-      </section>
-    </main>
-
-    <footer class="cartouche">
-      <dl>
-        <div><dt>Projet</dt><dd>Étude de site</dd></div>
-        <div><dt>Lieu</dt><dd>El Jadida, Maroc</dd></div>
-        <div><dt>Échelle</dt><dd>Premier contact</dd></div>
-        <div><dt>Feuille</dt><dd>04 / 04</dd></div>
-      </dl>
-      <div class="who"><strong>VÉ GARDE</strong><span>Sécurité privée · Gardiennage · Surveillance</span></div>
-    </footer>
-  </div>
+  <main id="contenu" class="ask">
+    <div class="ask-media">
+      <img src="img/street-night.jpg" alt="Veille nocturne, El Jadida" width="1600" height="1067">
+    </div>
+    <form class="ask-form" data-contact-form novalidate>
+      <p class="kicker">Étude de site</p>
+      <h1>Parlons de votre terrain.</h1>
+      <p class="lead">Un premier échange. Une visite pourra suivre.</p>
+      <div class="field">
+        <label for="name">Nom</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="company">Société / site</label>
+        <input id="company" name="company" type="text" autocomplete="organization">
+      </div>
+      <div class="field">
+        <label for="phone">Téléphone</label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+      </div>
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="site-type">Type de site</label>
+        <select id="site-type" name="site-type" required>
+          <option value="">Choisir</option>
+          <option>Chantier / site en construction</option>
+          <option>Résidence / copropriété</option>
+          <option>Commerce / local professionnel</option>
+          <option>Autre</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Observations (horaires, accès, enjeux)</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="actions">
+        <button class="btn btn-light" type="submit">Envoyer</button>
+        <p class="form-status" data-form-status hidden></p>
+      </div>
+      <p class="lead">El Jadida, Maroc · <span class="placeholder">[Adresse du siège]</span> · <span class="placeholder">Tél. [Numéro]</span> · <span class="placeholder">[E-mail]</span> · WhatsApp <span class="placeholder">[Numéro]</span></p>
+    </form>
+  </main>
   <script src="js/main.js"></script>
 </body>
 </html>

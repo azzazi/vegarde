@@ -3,103 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vé Garde — Planche 02 · Fiches de poste</title>
-  <meta name="description" content="Six fiches de poste : gardiennage, surveillance, contrôle d’accès, rondes, consignes, signalement.">
-  <meta name="theme-color" content="#eae2d0">
+  <title>Missions — Vé Garde</title>
+  <meta name="description" content="Gardiennage, surveillance, contrôle d’accès, rondes, consignes et signalement.">
+  <meta name="theme-color" content="#07090d">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
-  <div class="sheet">
-    <header class="sheet-head">
-      <a class="brand" href="index.html" aria-label="Vé Garde — Accueil">
-        <span class="stamp">VG</span>
-        <span>
-          <span class="brand-name">VÉ GARDE</span>
-          <span class="brand-meta">Planche 02 — Fiches de poste</span>
-        </span>
-      </a>
-      <nav class="nav-desktop" aria-label="Planches">
-        <a href="index.html"><b>00</b>Ensemble</a>
-        <a href="approche.html"><b>01</b>Méthode</a>
-        <a href="services.html" aria-current="page"><b>02</b>Fiches</a>
-        <a href="secteurs.html"><b>03</b>Sites</a>
-        <a href="contact.html"><b>04</b>Étude</a>
-      </nav>
-      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
-      <nav class="nav-mobile" id="menu-mobile" data-menu>
-        <a href="index.html">00 Ensemble</a>
-        <a href="approche.html">01 Méthode</a>
-        <a href="services.html" aria-current="page">02 Fiches</a>
-        <a href="secteurs.html">03 Sites</a>
-        <a href="contact.html">04 Étude</a>
-      </nav>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header class="top">
+    <a class="brand" href="index.html" aria-label="Vé Garde — Accueil"><i></i>Vé Garde</a>
+    <nav class="nav-desk" aria-label="Principal">
+      <a href="index.html">Accueil</a>
+      <a href="approche.html">Méthode</a>
+      <a href="services.html" aria-current="page">Missions</a>
+      <a href="secteurs.html">Sites</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="burger" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
+  </header>
+  <nav class="nav-mob" id="menu-mobile" data-menu>
+    <a href="index.html">Accueil</a>
+    <a href="approche.html">Méthode</a>
+    <a href="services.html" aria-current="page">Missions</a>
+    <a href="secteurs.html">Sites</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main id="contenu" class="page">
+    <header class="intro">
+      <p class="kicker">Six missions</p>
+      <h1>Ce que l’on tient.</h1>
+      <p class="lead">Une prestation n’est pas un catalogue. Six responsabilités, chacune ouverte pour être lue.</p>
     </header>
-
-    <main id="contenu" class="sheet-body">
-      <div class="page-intro">
-        <h1>Classeur de poste.</h1>
-        <p>Une prestation n’est pas un catalogue. C’est un classeur : six fiches, une à la fois, celle que l’agent et le client peuvent tenir.</p>
-      </div>
-      <div class="classeur" data-classeur>
-        <div class="onglets" role="tablist" aria-label="Fiches de poste">
-          <button type="button" role="tab" data-tab="1" aria-selected="true" aria-controls="fiche-1"><b>01</b>Gardiennage</button>
-          <button type="button" role="tab" data-tab="2" aria-selected="false" aria-controls="fiche-2"><b>02</b>Surveillance</button>
-          <button type="button" role="tab" data-tab="3" aria-selected="false" aria-controls="fiche-3"><b>03</b>Accès</button>
-          <button type="button" role="tab" data-tab="4" aria-selected="false" aria-controls="fiche-4"><b>04</b>Rondes</button>
-          <button type="button" role="tab" data-tab="5" aria-selected="false" aria-controls="fiche-5"><b>05</b>Consignes</button>
-          <button type="button" role="tab" data-tab="6" aria-selected="false" aria-controls="fiche-6"><b>06</b>Signalement</button>
+    <div class="missions" data-missions>
+      <article class="mission is-open">
+        <button type="button" aria-expanded="true"><span>01</span><h2>Gardiennage</h2></button>
+        <div class="mission-body">
+          <img src="img/presence.jpg" alt="Présence sur site" width="1600" height="1067">
+          <p>Présence d’agents de sécurité sur site selon les horaires et le dispositif définis avec le client. Surveillance des accès, des installations, des espaces extérieurs et des zones définies comme sensibles.</p>
         </div>
-        <div class="classeur-page">
-          <div class="rings" aria-hidden="true"><i></i><i></i><i></i></div>
-          <article class="fiche-sheet" id="fiche-1" role="tabpanel" data-panel="1">
-            <p class="code">VG-SRV-01 · Gardiennage</p>
-            <h2>Présence sur site</h2>
-            <p>Présence d’agents de sécurité sur site selon les horaires et le dispositif définis avec le client. Surveillance des accès, des installations, des espaces extérieurs et des zones définies comme sensibles.</p>
-          </article>
-          <article class="fiche-sheet" id="fiche-2" role="tabpanel" data-panel="2" hidden>
-            <p class="code">VG-SRV-02 · Surveillance</p>
-            <h2>Détecter, signaler</h2>
-            <p>Une présence attentive destinée à détecter et signaler les situations inhabituelles, les anomalies ou les comportements nécessitant une attention particulière. Organisée selon la configuration du site.</p>
-          </article>
-          <article class="fiche-sheet" id="fiche-3" role="tabpanel" data-panel="3" hidden>
-            <p class="code">VG-SRV-03 · Contrôle d’accès</p>
-            <h2>Filtrer le seuil</h2>
-            <p>Contrôle et filtrage des entrées et sorties selon les procédures établies : employés et résidents, visiteurs, fournisseurs et prestataires, véhicules, matériels et équipements.</p>
-          </article>
-          <article class="fiche-sheet" id="fiche-4" role="tabpanel" data-panel="4" hidden>
-            <p class="code">VG-SRV-04 · Rondes</p>
-            <h2>Parcourir le site</h2>
-            <p>Des rondes organisées selon les caractéristiques du site et les consignes définies. Vérifier les zones concernées, identifier les anomalies, signaler ce qui demande une action.</p>
-          </article>
-          <article class="fiche-sheet" id="fiche-5" role="tabpanel" data-panel="5" hidden>
-            <p class="code">VG-SRV-05 · Consignes</p>
-            <h2>Le cadre d’intervention</h2>
-            <p>Les agents interviennent dans le cadre de consignes définies pour le site : règles d’accès, points de contrôle, rondes, situations à signaler et procédures en cas d’incident.</p>
-          </article>
-          <article class="fiche-sheet" id="fiche-6" role="tabpanel" data-panel="6" hidden>
-            <p class="code">VG-SRV-06 · Signalement</p>
-            <h2>Rendre lisible</h2>
-            <p>Les événements et anomalies observés peuvent être consignés et remontés selon les procédures convenues. Traçabilité de la prestation, communication claire entre le site et Vé Garde.</p>
-          </article>
+      </article>
+      <article class="mission">
+        <button type="button" aria-expanded="false"><span>02</span><h2>Surveillance</h2></button>
+        <div class="mission-body">
+          <img src="img/street-night.jpg" alt="Veille dans la ville" width="1600" height="1067">
+          <p>Une présence attentive destinée à détecter et signaler les situations inhabituelles, les anomalies ou les comportements nécessitant une attention particulière. Organisée selon la configuration du site.</p>
         </div>
-      </div>
-    </main>
+      </article>
+      <article class="mission">
+        <button type="button" aria-expanded="false"><span>03</span><h2>Contrôle d’accès</h2></button>
+        <div class="mission-body">
+          <img src="img/entrance.jpg" alt="Seuil à filtrer" width="1600" height="1067">
+          <p>Contrôle et filtrage des entrées et sorties selon les procédures établies : employés et résidents, visiteurs, fournisseurs et prestataires, véhicules, matériels et équipements.</p>
+        </div>
+      </article>
+      <article class="mission">
+        <button type="button" aria-expanded="false"><span>04</span><h2>Rondes</h2></button>
+        <div class="mission-body">
+          <img src="img/city-night.jpg" alt="Parcours nocturne" width="1600" height="1067">
+          <p>Des rondes organisées selon les caractéristiques du site et les consignes définies. Vérifier les zones concernées, identifier les anomalies, signaler ce qui demande une action.</p>
+        </div>
+      </article>
+      <article class="mission">
+        <button type="button" aria-expanded="false"><span>05</span><h2>Consignes</h2></button>
+        <div class="mission-body">
+          <img src="img/approach.jpg" alt="Cadre d’intervention" width="1600" height="1067">
+          <p>Les agents interviennent dans le cadre de consignes définies pour le site : règles d’accès, points de contrôle, rondes, situations à signaler et procédures en cas d’incident.</p>
+        </div>
+      </article>
+      <article class="mission">
+        <button type="button" aria-expanded="false"><span>06</span><h2>Signalement</h2></button>
+        <div class="mission-body">
+          <img src="img/agents.jpg" alt="Remontée d’information" width="1600" height="1067">
+          <p>Les événements et anomalies observés peuvent être consignés et remontés selon les procédures convenues. Traçabilité de la prestation, communication claire entre le site et Vé Garde.</p>
+        </div>
+      </article>
+    </div>
+  </main>
 
-    <footer class="cartouche">
-      <dl>
-        <div><dt>Projet</dt><dd>Fiches de poste</dd></div>
-        <div><dt>Lieu</dt><dd>El Jadida, Maroc</dd></div>
-        <div><dt>Échelle</dt><dd>6 éléments</dd></div>
-        <div><dt>Feuille</dt><dd>02 / 04</dd></div>
-      </dl>
-      <div class="who"><strong>VÉ GARDE</strong><span>Ce que l’agent tient en main</span></div>
-    </footer>
-  </div>
+  <footer class="foot">
+    <p><strong>Vé Garde</strong> · El Jadida</p>
+    <p><a href="mentions-legales.html">Mentions légales</a></p>
+  </footer>
   <script src="js/main.js"></script>
 </body>
 </html>

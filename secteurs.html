@@ -3,151 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vé Garde — Planche 03 · Trois sites</title>
-  <meta name="description" content="Trois dessins de site : chantier, résidence, commerce. Le dispositif suit le terrain.">
-  <meta name="theme-color" content="#eae2d0">
+  <title>Sites — Vé Garde</title>
+  <meta name="description" content="Chantier, résidence, commerce : le dispositif suit le terrain.">
+  <meta name="theme-color" content="#07090d">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
-  <div class="sheet">
-    <header class="sheet-head">
-      <a class="brand" href="index.html" aria-label="Vé Garde — Accueil">
-        <span class="stamp">VG</span>
-        <span>
-          <span class="brand-name">VÉ GARDE</span>
-          <span class="brand-meta">Planche 03 — Trois sites</span>
-        </span>
-      </a>
-      <nav class="nav-desktop" aria-label="Planches">
-        <a href="index.html"><b>00</b>Ensemble</a>
-        <a href="approche.html"><b>01</b>Méthode</a>
-        <a href="services.html"><b>02</b>Fiches</a>
-        <a href="secteurs.html" aria-current="page"><b>03</b>Sites</a>
-        <a href="contact.html"><b>04</b>Étude</a>
-      </nav>
-      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
-      <nav class="nav-mobile" id="menu-mobile" data-menu>
-        <a href="index.html">00 Ensemble</a>
-        <a href="approche.html">01 Méthode</a>
-        <a href="services.html">02 Fiches</a>
-        <a href="secteurs.html" aria-current="page">03 Sites</a>
-        <a href="contact.html">04 Étude</a>
-      </nav>
-    </header>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header class="top">
+    <a class="brand" href="index.html" aria-label="Vé Garde — Accueil"><i></i>Vé Garde</a>
+    <nav class="nav-desk" aria-label="Principal">
+      <a href="index.html">Accueil</a>
+      <a href="approche.html">Méthode</a>
+      <a href="services.html">Missions</a>
+      <a href="secteurs.html" aria-current="page">Sites</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="burger" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
+  </header>
+  <nav class="nav-mob" id="menu-mobile" data-menu>
+    <a href="index.html">Accueil</a>
+    <a href="approche.html">Méthode</a>
+    <a href="services.html">Missions</a>
+    <a href="secteurs.html" aria-current="page">Sites</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-    <main id="contenu" class="sheet-body">
-      <div class="page-intro">
-        <h1>Le dispositif suit le site.</h1>
-        <p>Même exigence, trois vues sur la même planche. Comme un dossier de chantier : A, B, C — pas une galerie.</p>
+  <main id="contenu">
+    <section class="worlds" data-scene>
+      <div class="stage-media">
+        <img data-scene-img src="img/chantier.jpg" alt="Site en construction" width="1600" height="1067">
+        <div class="stage-veil"></div>
       </div>
-      <div class="views">
-        <article class="view-band" id="chantiers">
-          <div class="view-head"><span><b>Vue A</b> — Chantier</span><span>VG-CH-01</span></div>
-          <div class="view-body">
-            <div class="view-plan">
-              <svg viewBox="0 0 560 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="24" y="18" width="512" height="204" fill="none" stroke="#1c1914" stroke-dasharray="8 5"/>
-                <rect x="40" y="36" width="90" height="64" fill="none" stroke="#1c1914"/>
-                <text x="85" y="72" text-anchor="middle" font-size="9" font-family="IBM Plex Mono, monospace">MATERIEL</text>
-                <circle cx="280" cy="118" r="52" fill="none" stroke="#1c1914"/>
-                <text x="280" y="122" text-anchor="middle" font-size="9" font-family="IBM Plex Mono, monospace">GRUE</text>
-                <rect x="420" y="36" width="96" height="52" fill="none" stroke="#b1321f"/>
-                <text x="468" y="66" text-anchor="middle" font-size="9" font-family="IBM Plex Mono, monospace" fill="#b1321f">BASE VIE</text>
-                <rect x="40" y="188" width="48" height="22" fill="none" stroke="#1c1914"/>
-                <rect x="472" y="188" width="48" height="22" fill="none" stroke="#1c1914"/>
-                <path d="M64 188 V150 H280 V170" fill="none" stroke="#b1321f" stroke-dasharray="5 4"/>
-              </svg>
-            </div>
-            <div class="view-notes">
-              <h2>Chantier</h2>
-              <p>Mouvements importants de personnel, fournisseurs, véhicules et matériel.</p>
-              <ul>
-                <li data-n="1">Contrôle des accès</li>
-                <li data-n="2">Surveillance du périmètre</li>
-                <li data-n="3">Contrôle des véhicules</li>
-                <li data-n="4">Suivi des entrées et sorties</li>
-                <li data-n="5">Rondes</li>
-                <li data-n="6">Signalement des anomalies</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-        <article class="view-band" id="residences">
-          <div class="view-head"><span><b>Vue B</b> — Résidence</span><span>VG-RS-02</span></div>
-          <div class="view-body">
-            <div class="view-plan">
-              <svg viewBox="0 0 560 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="28" y="20" width="504" height="196" fill="none" stroke="#1c1914"/>
-                <path d="M140 64h280v80H320v52H140z" fill="none" stroke="#1c1914"/>
-                <rect x="236" y="188" width="72" height="22" fill="none" stroke="#1c1914"/>
-                <text x="272" y="203" text-anchor="middle" font-size="8" font-family="IBM Plex Mono, monospace">ACCES</text>
-                <rect x="36" y="148" width="80" height="60" fill="none" stroke="#1c1914"/>
-                <text x="76" y="182" text-anchor="middle" font-size="8" font-family="IBM Plex Mono, monospace">PARKING</text>
-                <rect x="168" y="108" width="96" height="32" fill="none" stroke="#b1321f"/>
-                <text x="216" y="128" text-anchor="middle" font-size="8" font-family="IBM Plex Mono, monospace" fill="#b1321f">SENSIBLE</text>
-              </svg>
-            </div>
-            <div class="view-notes">
-              <h2>Résidence</h2>
-              <p>Présence organisée et gestion rigoureuse des accès.</p>
-              <ul>
-                <li data-n="1">Contrôle des visiteurs</li>
-                <li data-n="2">Contrôle des prestataires</li>
-                <li data-n="3">Gestion des accès</li>
-                <li data-n="4">Surveillance des espaces communs</li>
-                <li data-n="5">Contrôle des véhicules</li>
-                <li data-n="6">Rondes</li>
-              </ul>
-            </div>
-          </div>
-        </article>
-        <article class="view-band" id="commerces">
-          <div class="view-head"><span><b>Vue C</b> — Commerce</span><span>VG-CM-03</span></div>
-          <div class="view-body">
-            <div class="view-plan">
-              <svg viewBox="0 0 560 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="36" y="24" width="488" height="168" fill="none" stroke="#1c1914"/>
-                <line x1="36" y1="214" x2="524" y2="214" stroke="#1c1914" stroke-width="3"/>
-                <text x="280" y="232" text-anchor="middle" font-size="8" font-family="IBM Plex Mono, monospace">VOIE PUBLIQUE</text>
-                <rect x="220" y="160" width="80" height="48" fill="none" stroke="#1c1914"/>
-                <text x="260" y="188" text-anchor="middle" font-size="8" font-family="IBM Plex Mono, monospace">ENTREE</text>
-                <rect x="56" y="44" width="72" height="48" fill="none" stroke="#b1321f"/>
-                <text x="92" y="72" text-anchor="middle" font-size="8" font-family="IBM Plex Mono, monospace" fill="#b1321f">CAISSE</text>
-                <rect x="420" y="44" width="80" height="72" fill="none" stroke="#1c1914"/>
-                <text x="460" y="84" text-anchor="middle" font-size="8" font-family="IBM Plex Mono, monospace">LIVRAISON</text>
-              </svg>
-            </div>
-            <div class="view-notes">
-              <h2>Commerce</h2>
-              <p>Surveillance adaptée à l’activité et aux horaires.</p>
-              <ul>
-                <li data-n="1">Contrôle des accès</li>
-                <li data-n="2">Surveillance des locaux</li>
-                <li data-n="3">Rondes</li>
-                <li data-n="4">Surveillance des zones extérieures</li>
-                <li data-n="5">Signalement des anomalies</li>
-              </ul>
-            </div>
-          </div>
-        </article>
+      <div class="stage-copy">
+        <p class="kicker">Le dispositif suit le site</p>
+        <h1>Trois atmosphères. Une exigence.</h1>
+        <p class="lead" data-scene-caption>Chantier — mouvements importants de personnel, fournisseurs, véhicules et matériel.</p>
+        <div class="pills" data-site-switch>
+          <button type="button" data-site="chantier" data-src="img/chantier.jpg" data-caption="Chantier — mouvements importants de personnel, fournisseurs, véhicules et matériel." aria-pressed="true">Chantier</button>
+          <button type="button" data-site="residence" data-src="img/residence.jpg" data-caption="Résidence — présence organisée et gestion rigoureuse des accès.">Résidence</button>
+          <button type="button" data-site="commerce" data-src="img/commerce.jpg" data-caption="Commerce — surveillance adaptée à l’activité et aux horaires.">Commerce</button>
+        </div>
+        <ul class="world-notes" id="chantiers">
+          <li>Contrôle des accès</li>
+          <li>Surveillance du périmètre</li>
+          <li>Contrôle des véhicules</li>
+          <li>Suivi des entrées et sorties</li>
+          <li>Rondes</li>
+          <li>Signalement des anomalies</li>
+        </ul>
+        <ul class="world-notes" id="residences" hidden>
+          <li>Contrôle des visiteurs</li>
+          <li>Contrôle des prestataires</li>
+          <li>Gestion des accès</li>
+          <li>Surveillance des espaces communs</li>
+          <li>Contrôle des véhicules</li>
+          <li>Rondes</li>
+        </ul>
+        <ul class="world-notes" id="commerces" hidden>
+          <li>Contrôle des accès</li>
+          <li>Surveillance des locaux</li>
+          <li>Rondes</li>
+          <li>Surveillance des zones extérieures</li>
+          <li>Signalement des anomalies</li>
+        </ul>
       </div>
-    </main>
+    </section>
+  </main>
 
-    <footer class="cartouche">
-      <dl>
-        <div><dt>Projet</dt><dd>Trois terrains types</dd></div>
-        <div><dt>Lieu</dt><dd>El Jadida, Maroc</dd></div>
-        <div><dt>Échelle</dt><dd>A chantier · B résidence · C commerce</dd></div>
-        <div><dt>Feuille</dt><dd>03 / 04</dd></div>
-      </dl>
-      <div class="who"><strong>VÉ GARDE</strong><span>Un dessin par environnement</span></div>
-    </footer>
-  </div>
+  <footer class="foot">
+    <p><strong>Vé Garde</strong> · El Jadida</p>
+    <p><a href="mentions-legales.html">Mentions légales</a></p>
+  </footer>
   <script src="js/main.js"></script>
 </body>
 </html>

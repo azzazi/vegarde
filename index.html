@@ -3,122 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vé Garde — Planche 00 · Ensemble</title>
-  <meta name="description" content="Vé Garde organise le gardiennage autour du plan de chaque site : accès, postes, rondes et consignes. El Jadida, Maroc.">
-  <meta name="theme-color" content="#eae2d0">
+  <title>Vé Garde — Sécurité privée à El Jadida</title>
+  <meta name="description" content="Vé Garde organise le gardiennage autour de chaque site : accès, postes, rondes et consignes. El Jadida, Maroc.">
+  <meta name="theme-color" content="#07090d">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
-  <div class="sheet">
-    <header class="sheet-head">
-      <a class="brand" href="index.html" aria-label="Vé Garde — Accueil">
-        <span class="stamp">VG</span>
-        <span>
-          <span class="brand-name">VÉ GARDE</span>
-          <span class="brand-meta">Planche 00 — Ensemble</span>
-        </span>
-      </a>
-      <nav class="nav-desktop" aria-label="Planches">
-        <a href="index.html" aria-current="page"><b>00</b>Ensemble</a>
-        <a href="approche.html"><b>01</b>Méthode</a>
-        <a href="services.html"><b>02</b>Fiches</a>
-        <a href="secteurs.html"><b>03</b>Sites</a>
-        <a href="contact.html"><b>04</b>Étude</a>
-      </nav>
-      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
-      <nav class="nav-mobile" id="menu-mobile" data-menu>
-        <a href="index.html" aria-current="page">00 Ensemble</a>
-        <a href="approche.html">01 Méthode</a>
-        <a href="services.html">02 Fiches</a>
-        <a href="secteurs.html">03 Sites</a>
-        <a href="contact.html">04 Étude</a>
-      </nav>
-    </header>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header class="top">
+    <a class="brand" href="index.html" aria-label="Vé Garde — Accueil"><i></i>Vé Garde</a>
+    <nav class="nav-desk" aria-label="Principal">
+      <a href="index.html" aria-current="page">Accueil</a>
+      <a href="approche.html">Méthode</a>
+      <a href="services.html">Missions</a>
+      <a href="secteurs.html">Sites</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="burger" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
+  </header>
+  <nav class="nav-mob" id="menu-mobile" data-menu>
+    <a href="index.html" aria-current="page">Accueil</a>
+    <a href="approche.html">Méthode</a>
+    <a href="services.html">Missions</a>
+    <a href="secteurs.html">Sites</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-    <main id="contenu" class="sheet-body">
-      <div class="board">
-        <div class="drawing">
-          <div class="drawing-head">
-            <span><b>Calque</b> — type de terrain</span>
-            <span>El Jadida · N</span>
-          </div>
-          <div class="plan-toolbar" data-plan-switch>
-            <button type="button" data-site="chantier">Chantier</button>
-            <button type="button" data-site="residence" aria-pressed="true">Résidence</button>
-            <button type="button" data-site="commerce">Commerce</button>
-          </div>
-          <div class="plan-host" data-plan-host>Chargement du plan…</div>
-          <p class="plan-readout" data-plan-note><b>1</b><span>Accès — contrôle et filtrage des entrées et sorties.</span></p>
-          <nav class="scalebar" aria-label="Méthode — échelle du dispositif">
-            <a href="approche.html#p1"><b>1</b>Analyse</a>
-            <a href="approche.html#p2"><b>2</b>Visite</a>
-            <a href="approche.html#p3"><b>3</b>Organisation</a>
-            <a href="approche.html#p4"><b>4</b>Consignes</a>
-            <a href="approche.html#p5"><b>5</b>Déploiement</a>
-            <a href="approche.html#p6"><b>6</b>Suivi</a>
-          </nav>
-        </div>
-        <aside class="legend" data-legend>
-          <p class="legend-kicker">Légende du dispositif</p>
-          <p class="lead">Ceci n’est pas une page d’accueil. C’est le plan d’un site. Vé Garde lit un terrain comme un dessin : accès, flux, postes, rondes. Un repère allume la zone correspondante.</p>
-          <ol class="callouts">
-            <li data-hot="p1" tabindex="0"><b>1</b><span>Accès — contrôle et filtrage des entrées et sorties.</span></li>
-            <li data-hot="p2" tabindex="0"><b>2</b><span>Locaux — surveillance des bâtiments et installations.</span></li>
-            <li data-hot="p3" tabindex="0"><b>3</b><span>Périmètre — lecture des limites et des espaces extérieurs.</span></li>
-            <li data-hot="p4" tabindex="0"><b>4</b><span>Véhicules — parking, livraisons, mouvements de matériel.</span></li>
-            <li data-hot="p5" tabindex="0"><b>5</b><span>Zone sensible — consignes particulières, signalement prioritaire.</span></li>
-            <li data-hot="p6" tabindex="0"><b>6</b><span>Ronde — parcours organisé selon le site, pas un circuit type.</span></li>
-          </ol>
-          <div class="actions">
-            <a class="btn btn-stamp" href="contact.html">Ouvrir une étude de site</a>
-            <a class="btn" href="approche.html">Déplier la méthode</a>
-          </div>
-        </aside>
+  <main id="contenu">
+    <section class="stage" data-scene>
+      <div class="stage-media">
+        <img data-scene-img src="img/residence.jpg" alt="Résidence contemporaine, lecture du site" width="1600" height="1067">
+        <div class="stage-veil"></div>
       </div>
+      <div class="stage-copy">
+        <p class="kicker">El Jadida · Sécurité privée</p>
+        <h1>Une présence organisée. Une vigilance constante.</h1>
+        <p class="lead">Vé Garde lit un terrain comme on lit la nuit : accès, flux, postes, rondes. Changez de site — l’atmosphère change, la méthode reste.</p>
+        <div class="pills" data-site-switch>
+          <button type="button" data-site="chantier" data-src="img/chantier.jpg" data-caption="Chantier — mouvements, livraisons, périmètre ouvert.">Chantier</button>
+          <button type="button" data-site="residence" data-src="img/residence.jpg" data-caption="Résidence — accès, hall, espaces communs." aria-pressed="true">Résidence</button>
+          <button type="button" data-site="commerce" data-src="img/commerce.jpg" data-caption="Commerce — vitrine, caisse, livraisons.">Commerce</button>
+        </div>
+        <p class="kicker" data-scene-caption>Résidence — accès, hall, espaces communs.</p>
+        <ol class="zones" data-zones>
+          <li tabindex="0"><b>01</b><span>Accès — contrôle et filtrage des entrées et sorties.</span></li>
+          <li tabindex="0"><b>02</b><span>Locaux — surveillance des bâtiments et installations.</span></li>
+          <li tabindex="0"><b>03</b><span>Périmètre — lecture des limites et des espaces extérieurs.</span></li>
+          <li tabindex="0"><b>04</b><span>Véhicules — parking, livraisons, mouvements de matériel.</span></li>
+          <li tabindex="0"><b>05</b><span>Zone sensible — consignes particulières, signalement prioritaire.</span></li>
+          <li tabindex="0"><b>06</b><span>Ronde — parcours organisé selon le site, pas un circuit type.</span></li>
+        </ol>
+        <div class="actions">
+          <a class="btn btn-light" href="contact.html">Demander une étude</a>
+          <a class="btn" href="approche.html">Voir la méthode</a>
+        </div>
+      </div>
+    </section>
 
-      <section class="notice">
-        <h2>Note de service</h2>
+    <section class="band">
+      <div>
+        <h2>Le site d’abord.</h2>
         <p>Vé Garde est une société marocaine spécialisée dans la sécurité privée, dédiée au gardiennage et à la surveillance des sites professionnels, résidentiels et en construction.</p>
-        <p>Notre approche repose sur une organisation adaptée à chaque site : comprendre les besoins, définir les consignes, organiser la présence des agents et assurer le suivi de la prestation. Changez le calque du plan — le dessin change, la méthode reste.</p>
-        <figure class="annex">
-          <img src="img/agents.jpg" alt="Immeuble contemporain, annexe photographique" width="1800" height="2400">
-          <p>Annexe photo — présence sur le terrain. L’agent est le premier contact du site. Sélection, présentation, ponctualité, vigilance, respect des consignes.</p>
-        </figure>
-      </section>
-    </main>
-
-    <footer class="cartouche">
-      <dl>
-        <div>
-          <dt>Projet</dt>
-          <dd>Dispositif de site</dd>
-        </div>
-        <div>
-          <dt>Lieu</dt>
-          <dd>El Jadida, Maroc</dd>
-        </div>
-        <div>
-          <dt>Échelle</dt>
-          <dd>1 analyse → 6 suivi</dd>
-        </div>
-        <div>
-          <dt>Feuille</dt>
-          <dd>00 / 04</dd>
-        </div>
-      </dl>
-      <div class="who">
-        <strong>VÉ GARDE</strong>
-        <span>Sécurité privée · Gardiennage · Surveillance</span>
-        <span data-year>2026</span>
-        · <a href="mentions-legales.html">Cartouche légal</a>
+        <p>Notre approche repose sur une organisation adaptée à chaque site : comprendre les besoins, définir les consignes, organiser la présence des agents et assurer le suivi de la prestation.</p>
       </div>
-    </footer>
-  </div>
+      <figure>
+        <img src="img/presence.jpg" alt="Présence sur un site contemporain" width="1600" height="1067">
+        <figcaption>L’agent est le premier contact du site. Sélection, présentation, ponctualité, vigilance, respect des consignes.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p><strong>Vé Garde</strong> · Sécurité privée · Gardiennage · Surveillance</p>
+    <p>El Jadida, Maroc · <span data-year>2026</span> · <a href="mentions-legales.html">Mentions légales</a></p>
+  </footer>
   <script src="js/main.js"></script>
 </body>
 </html>

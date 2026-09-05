@@ -3,11 +3,9 @@
   const menu = document.querySelector("[data-menu]");
   const year = document.querySelector("[data-year]");
   const form = document.querySelector("[data-contact-form]");
-  const planHost = document.querySelector("[data-plan-host]");
-  const toolbar = document.querySelector("[data-plan-switch]");
-  const legend = document.querySelector("[data-legend]");
-  const note = document.querySelector("[data-plan-note]");
-  const classeur = document.querySelector("[data-classeur]");
+  const scenes = document.querySelectorAll("[data-scene]");
+  const zones = document.querySelector("[data-zones]");
+  const missions = document.querySelector("[data-missions]");
 
   if (year) year.textContent = String(new Date().getFullYear());
 
@@ -34,93 +32,56 @@
     });
   }
 
-  const setSite = (name) => {
-    if (!planHost) return;
-    planHost.querySelectorAll("[data-site-plan]").forEach((group) => {
-      if (group.getAttribute("data-site-plan") === name) group.removeAttribute("hidden");
-      else group.setAttribute("hidden", "hidden");
-    });
-    if (toolbar) {
-      toolbar.querySelectorAll("button").forEach((btn) => {
-        btn.setAttribute("aria-pressed", String(btn.dataset.site === name));
-      });
-    }
-  };
-
-  const setHot = (id) => {
-    if (!id) return;
-    if (planHost) {
-      planHost.querySelectorAll("[data-hot]").forEach((node) => {
-        node.classList.toggle("is-on", node.getAttribute("data-hot") === id);
-      });
-    }
-    if (legend) {
-      legend.querySelectorAll("[data-hot]").forEach((item) => {
-        const on = item.getAttribute("data-hot") === id;
-        item.classList.toggle("is-on", on);
-        if (on && note) note.innerHTML = item.innerHTML;
-      });
-    }
-  };
-
-  if (toolbar) {
-    toolbar.addEventListener("click", (event) => {
+  scenes.forEach((scene) => {
+    const img = scene.querySelector("[data-scene-img]");
+    const switcher = scene.querySelector("[data-site-switch]");
+    const caption = scene.querySelector("[data-scene-caption]");
+    if (!switcher) return;
+    switcher.addEventListener("click", (event) => {
       const btn = event.target.closest("[data-site]");
       if (!btn) return;
-      setSite(btn.dataset.site);
-      const current = legend?.querySelector("[data-hot].is-on")?.getAttribute("data-hot") || "p1";
-      setHot(current);
+      switcher.querySelectorAll("[data-site]").forEach((node) => {
+        node.setAttribute("aria-pressed", String(node === btn));
+      });
+      if (img && btn.dataset.src) img.src = btn.dataset.src;
+      if (caption && btn.dataset.caption) caption.textContent = btn.dataset.caption;
+      const notes = {
+        chantier: "chantiers",
+        residence: "residences",
+        commerce: "commerces"
+      };
+      scene.querySelectorAll(".world-notes").forEach((list) => {
+        list.hidden = list.id !== notes[btn.dataset.site];
+      });
     });
-  }
+  });
 
-  if (legend) {
-    const activate = (event) => {
-      const item = event.target.closest("[data-hot]");
-      if (item) setHot(item.getAttribute("data-hot"));
+  if (zones) {
+    const items = [...zones.querySelectorAll("li")];
+    const setOn = (target) => {
+      items.forEach((item) => item.classList.toggle("is-on", item === target));
     };
-    legend.addEventListener("mouseover", activate);
-    legend.addEventListener("focusin", activate);
-    legend.addEventListener("click", activate);
-  }
-
-  if (planHost) {
-    const fromPlan = (event) => {
-      const hot = event.target.closest("[data-hot]");
-      if (hot) setHot(hot.getAttribute("data-hot"));
-    };
-    planHost.addEventListener("mouseover", fromPlan);
-    planHost.addEventListener("click", fromPlan);
-
-    fetch("img/plan-site.svg")
-      .then((res) => res.text())
-      .then((markup) => {
-        planHost.innerHTML = markup;
-        const start = toolbar?.querySelector("[aria-pressed='true']")?.dataset.site || "residence";
-        setSite(start);
-        setHot("p1");
-      })
-      .catch(() => {
-        planHost.textContent = "Plan indisponible.";
-      });
-  }
-
-  if (classeur) {
-    const tabs = [...classeur.querySelectorAll("[data-tab]")];
-    const panels = [...classeur.querySelectorAll("[data-panel]")];
-    const show = (id) => {
-      tabs.forEach((tab) => {
-        const on = tab.dataset.tab === id;
-        tab.setAttribute("aria-selected", String(on));
-      });
-      panels.forEach((panel) => {
-        panel.hidden = panel.dataset.panel !== id;
-      });
-    };
-    tabs.forEach((tab) => {
-      tab.addEventListener("click", () => show(tab.dataset.tab));
+    items.forEach((item) => {
+      item.addEventListener("mouseenter", () => setOn(item));
+      item.addEventListener("focus", () => setOn(item));
+      item.addEventListener("click", () => setOn(item));
     });
-    const current = tabs.find((tab) => tab.getAttribute("aria-selected") === "true") || tabs[0];
-    if (current) show(current.dataset.tab);
+    if (items[0]) setOn(items[0]);
+  }
+
+  if (missions) {
+    const items = [...missions.querySelectorAll(".mission")];
+    const show = (target) => {
+      items.forEach((item) => {
+        const on = item === target;
+        item.classList.toggle("is-open", on);
+        item.querySelector("button")?.setAttribute("aria-expanded", String(on));
+      });
+    };
+    items.forEach((item) => {
+      item.querySelector("button")?.addEventListener("click", () => show(item));
+    });
+    if (items[0]) show(items[0]);
   }
 
   if (form) {
