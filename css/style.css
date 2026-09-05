@@ -325,9 +325,15 @@ h3 {
   color: var(--red);
 }
 
-.hero .lead {
+.hero .lead,
+.lede {
   max-width: 33rem;
   font-size: 1.1rem;
+}
+
+.lede {
+  margin: 0.6rem 0 1rem;
+  color: var(--body);
 }
 
 .hero .actions {
@@ -372,6 +378,62 @@ h3 {
   background: var(--red);
   box-shadow: 0 0 0 4px rgba(252, 39, 63, 0.15);
   flex: none;
+}
+
+.service-tag {
+  display: inline-block;
+  color: var(--red);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.media-frame {
+  margin: 0;
+}
+
+.media-frame img {
+  width: 100%;
+  height: clamp(300px, 40vw, 460px);
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.caption {
+  margin-top: 0.65rem;
+  font-size: 0.88rem;
+  color: var(--soft);
+  font-weight: 600;
+}
+
+.bullet-list {
+  display: grid;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+  font-size: 0.96rem;
+}
+
+.bullet-list li {
+  padding-left: 1.15rem;
+  position: relative;
+}
+
+.bullet-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 50%;
+  background: var(--red);
+}
+
+.engagement {
+  display: grid;
+  gap: 1.1rem;
 }
 
 /* ---------- shared sections ---------- */
@@ -595,6 +657,36 @@ h3 {
   max-width: 26ch;
 }
 
+.cta-wide {
+  grid-template-columns: 1fr;
+}
+
+.cta-wide .actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.kicker-light {
+  color: #ffb3bc;
+}
+
+.kicker-light::before {
+  background: #ffb3bc;
+}
+
+.btn-line-light {
+  border-color: rgba(255, 255, 255, 0.55);
+  color: #fff;
+}
+
+.btn-line-light:hover,
+.btn-line-light:focus-visible {
+  background: #fff;
+  color: var(--navy);
+  border-color: #fff;
+}
+
 /* footer */
 
 .foot {
@@ -685,6 +777,34 @@ h3 {
   display: grid;
   gap: 1rem;
   background: #fff;
+}
+
+.form-card h3 {
+  font-size: 1.25rem;
+  margin: -0.2rem 0 0;
+}
+
+.contact-details h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin: 0.5rem 0 1.2rem;
+}
+
+.info-cards {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.info-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.2rem;
+  display: grid;
+  gap: 0.35rem;
+  background: var(--card);
+}
+
+.info-card h3 {
+  font-size: 1rem;
 }
 
 .field {
@@ -797,6 +917,13 @@ h3 {
   font-weight: 400;
 }
 
+.legal-note {
+  margin-top: 1.2rem;
+  max-width: 40rem;
+  font-size: 0.94rem;
+  color: var(--soft);
+}
+
 /* 404 */
 
 .lost {
@@ -822,6 +949,19 @@ h3 {
 @media (min-width: 720px) {
   .values {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .engagement {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-wide {
+    grid-template-columns: 1fr auto;
+    align-items: center;
   }
 
   .cards {
@@ -868,6 +1008,10 @@ h3 {
   }
 
   .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .engagement {
     grid-template-columns: repeat(3, 1fr);
   }
 
