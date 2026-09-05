@@ -4,98 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact — Vé Garde</title>
-  <meta name="description" content="Contacter Vé Garde à El Jadida pour une étude de site, une prestation de gardiennage ou de surveillance.">
-  <meta name="theme-color" content="#07141C">
+  <meta name="description" content="Demander une étude de site à Vé Garde, société de sécurité privée à El Jadida.">
+  <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page-inner">
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
-
-  <header class="site-header" data-header>
-    <div class="header-inner">
-      <a class="brand" href="index.html" aria-label="Vé Garde — Accueil">
-        <span class="mark" aria-hidden="true"></span>
-        <span class="wordmark">
-          <span class="wordmark-name">VÉ GARDE</span>
-          <span class="wordmark-sub">Sécurité privée</span>
-        </span>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+  <header class="top">
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Vé Garde — Accueil">
+        <img src="img/logo.svg" alt="Vé Garde" width="224" height="44">
       </a>
-      <nav class="nav-desktop" aria-label="Navigation principale">
-        <a href="index.html"><b>00</b>Accueil</a>
-        <a href="approche.html"><b>01</b>Approche</a>
-        <a href="services.html"><b>02</b>Services</a>
-        <a href="secteurs.html"><b>03</b>Secteurs</a>
-        <a href="contact.html" aria-current="page"><b>04</b>Contact</a>
+      <nav class="nav-desk" aria-label="Principal">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="approche.html">Notre approche</a>
+        <a href="secteurs.html">Secteurs</a>
+        <a href="contact.html" aria-current="page">Contact</a>
       </nav>
-      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu">
-        <span></span>
-      </button>
+      <a class="btn btn-red" href="contact.html">Demander une étude</a>
+      <button class="burger" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
     </div>
   </header>
-
-  <nav class="nav-mobile" id="menu-mobile" data-menu aria-label="Menu mobile">
-    <a href="index.html">00 Accueil</a>
-    <a href="approche.html">01 Approche</a>
-    <a href="services.html">02 Services</a>
-    <a href="secteurs.html">03 Secteurs</a>
-    <a href="contact.html" aria-current="page">04 Contact</a>
-    <p class="nav-mobile-meta">El Jadida · 33.256°N · Maroc</p>
+  <nav class="nav-mob" id="menu-mobile" data-menu>
+    <a href="index.html">Accueil</a>
+    <a href="services.html">Services</a>
+    <a href="approche.html">Notre approche</a>
+    <a href="secteurs.html">Secteurs</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+    <a class="btn btn-red" href="contact.html">Demander une étude</a>
   </nav>
 
   <main id="contenu">
-    <header class="page-hero">
-      <div class="page-hero-media">
-        <img src="img/city-night.jpg" alt="Volumes architecturaux contemporains" width="2000" height="2831">
-      </div>
-      <div class="page-hero-content">
-        <p class="eyebrow">VG-04 · Dossier</p>
-        <h1>Parlons de votre site</h1>
-        <p class="lede muted">Une première conversation suffit pour comprendre le besoin et envisager une visite.</p>
-      </div>
-    </header>
+    <div class="wrap page-hero">
+      <p class="kicker">Contact</p>
+      <h1>Parlons de votre site</h1>
+      <p class="lead">Un premier échange pour comprendre votre besoin. Une visite pourra suivre.</p>
+    </div>
 
-    <section class="section light">
-      <div class="container contact-layout">
-        <div class="reveal">
-          <p class="eyebrow">Vé Garde</p>
-          <h2>El Jadida, Maroc</h2>
-          <div class="info-grid contact-details">
-            <article class="info-card">
-              <span class="service-index">Siège</span>
-              <h3>Adresse</h3>
-              <p class="placeholder">[Adresse du siège]</p>
-              <p>El Jadida, Maroc</p>
-            </article>
-            <article class="info-card">
-              <span class="service-index">Téléphone</span>
-              <h3>Ligne directe</h3>
-              <p class="placeholder">Tél. : [Numéro de téléphone]</p>
-              <p class="placeholder">WhatsApp : [Numéro WhatsApp]</p>
-            </article>
-            <article class="info-card">
-              <span class="service-index">Écrit</span>
-              <h3>E-mail</h3>
-              <p class="placeholder">[Adresse e-mail]</p>
-              <p class="placeholder">Web : [Site internet]</p>
-            </article>
-            <article class="info-card">
-              <span class="service-index">Activité</span>
-              <h3>Missions</h3>
-              <p class="muted-light">Sécurité privée · Gardiennage · Surveillance</p>
-            </article>
-          </div>
-        </div>
-
-        <form class="contact-form reveal delay-2" data-contact-form novalidate>
-          <p class="eyebrow">VG-ETD</p>
-          <h3>Étude de site</h3>
-          <p class="muted-light">Décrivez votre besoin. Nous reviendrons vers vous pour préciser le dispositif.</p>
+    <section class="section">
+      <div class="wrap contact-grid">
+        <form class="form-card" data-contact-form novalidate>
           <div class="field">
-            <label for="name">Nom</label>
+            <label for="name">Nom *</label>
             <input id="name" name="name" type="text" autocomplete="name" required>
           </div>
           <div class="field">
@@ -103,17 +55,17 @@
             <input id="company" name="company" type="text" autocomplete="organization">
           </div>
           <div class="field">
-            <label for="phone">Téléphone</label>
+            <label for="phone">Téléphone *</label>
             <input id="phone" name="phone" type="tel" autocomplete="tel" required>
           </div>
           <div class="field">
-            <label for="email">E-mail</label>
+            <label for="email">E-mail *</label>
             <input id="email" name="email" type="email" autocomplete="email" required>
           </div>
           <div class="field">
-            <label for="site-type">Type de site</label>
+            <label for="site-type">Type de site *</label>
             <select id="site-type" name="site-type" required>
-              <option value="">Sélectionner</option>
+              <option value="">Choisir</option>
               <option>Chantier / site en construction</option>
               <option>Résidence / copropriété</option>
               <option>Commerce / local professionnel</option>
@@ -121,49 +73,63 @@
             </select>
           </div>
           <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required placeholder="Horaires, accès, enjeux particuliers…"></textarea>
+            <label for="message">Votre besoin (horaires, accès, enjeux) *</label>
+            <textarea id="message" name="message" required></textarea>
           </div>
-          <button class="btn btn-dark" type="submit">Envoyer la demande</button>
+          <div>
+            <button class="btn btn-red" type="submit">Envoyer la demande</button>
+          </div>
           <p class="form-status" data-form-status hidden></p>
         </form>
+
+        <aside class="contact-info">
+          <img src="img/office.jpg" alt="Espace de travail lumineux" width="1600" height="1068" loading="lazy">
+          <div class="info-line">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+            </span>
+            <div>
+              <h3>Adresse</h3>
+              <p>El Jadida, Maroc · <span class="placeholder">[Adresse du siège]</span></p>
+            </div>
+          </div>
+          <div class="info-line">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
+            </span>
+            <div>
+              <h3>Téléphone / WhatsApp</h3>
+              <p><span class="placeholder">Tél. [Numéro]</span> · WhatsApp <span class="placeholder">[Numéro]</span></p>
+            </div>
+          </div>
+          <div class="info-line">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            </span>
+            <div>
+              <h3>E-mail</h3>
+              <p><span class="placeholder">[E-mail]</span></p>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a class="brand" href="index.html">
-            <span class="mark" aria-hidden="true"></span>
-            <span class="wordmark">
-              <span class="wordmark-name">VÉ GARDE</span>
-              <span class="wordmark-sub">Sécurité privée</span>
-            </span>
-          </a>
-        </div>
-        <div class="footer-col">
-          <h3>Navigation</h3>
-          <a href="approche.html">01 Approche</a>
-          <a href="services.html">02 Services</a>
-          <a href="secteurs.html">03 Secteurs</a>
-          <a href="contact.html">04 Contact</a>
-        </div>
-        <div class="footer-col">
-          <h3>Contact</h3>
-          <p>El Jadida, Maroc</p>
-          <p class="placeholder">[Adresse du siège]</p>
-        </div>
-        <div class="footer-col">
-          <h3>Informations</h3>
-          <a href="mentions-legales.html">Mentions légales</a>
-        </div>
+  <footer class="foot">
+    <div class="wrap">
+      <div>
+        <p class="brand">Vé Garde</p>
+        <p>Sécurité privée · Gardiennage · Surveillance<br>El Jadida, Maroc</p>
       </div>
-      <div class="footer-bottom">
-        <p>© <span data-year>2026</span> Vé Garde</p>
-        <p>33.256°N · El Jadida · Maroc</p>
-      </div>
+      <nav aria-label="Pied de page">
+        <a href="services.html">Services</a>
+        <a href="approche.html">Notre approche</a>
+        <a href="secteurs.html">Secteurs</a>
+        <a href="contact.html">Contact</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+      </nav>
+      <p class="legal"><span>© <span data-year>2026</span> Vé Garde. Tous droits réservés.</span></p>
     </div>
   </footer>
   <script src="js/main.js"></script>
