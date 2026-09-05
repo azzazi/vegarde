@@ -37,15 +37,17 @@
   </nav>
 
   <main id="contenu">
-    <div class="wrap page-hero">
-      <p class="kicker">Nos secteurs</p>
-      <h1>Le dispositif suit le site</h1>
-      <p class="lead">Chantiers, résidences, commerces et locaux professionnels : chaque environnement appelle une organisation propre.</p>
-    </div>
+    <header class="page-intro">
+      <div class="wrap prose">
+        <p class="kicker">Nos secteurs</p>
+        <h1>Le dispositif suit le site</h1>
+        <p class="lead">Chantiers, résidences, commerces et locaux professionnels : chaque environnement appelle une organisation propre.</p>
+      </div>
+    </header>
 
-    <section class="section" id="chantiers">
-      <div class="wrap split">
-        <div>
+    <section class="sector-panel" id="chantiers">
+      <div class="wrap sector-inner">
+        <div class="sector-sticky">
           <p class="kicker">01 — Chantiers</p>
           <h2>Chantiers &amp; sites en construction</h2>
           <p>Les chantiers présentent des mouvements importants de personnel, de fournisseurs, de véhicules et de matériel.</p>
@@ -59,15 +61,13 @@
             <li>Signalement des anomalies</li>
           </ul>
         </div>
-        <figure class="media-frame">
-          <img src="img/chantier.jpg" alt="Chantier de construction" width="1600" height="1067" loading="lazy">
-        </figure>
+        <img src="img/chantier.jpg" alt="Chantier de construction" width="1600" height="1067" loading="lazy">
       </div>
     </section>
 
-    <section class="section" id="residences">
-      <div class="wrap split flip">
-        <div>
+    <section class="sector-panel sector-panel--flip section-soft" id="residences">
+      <div class="wrap sector-inner">
+        <div class="sector-sticky">
           <p class="kicker">02 — Résidences</p>
           <h2>Résidences &amp; copropriétés</h2>
           <p>La sécurité d’une résidence nécessite une présence organisée et une gestion rigoureuse des accès.</p>
@@ -81,15 +81,13 @@
             <li>Rondes</li>
           </ul>
         </div>
-        <figure class="media-frame">
-          <img src="img/residence.jpg" alt="Résidence et copropriété" width="1600" height="1067" loading="lazy">
-        </figure>
+        <img src="img/residence.jpg" alt="Résidence et copropriété" width="1600" height="1067" loading="lazy">
       </div>
     </section>
 
-    <section class="section" id="commerces">
-      <div class="wrap split">
-        <div>
+    <section class="sector-panel" id="commerces">
+      <div class="wrap sector-inner">
+        <div class="sector-sticky">
           <p class="kicker">03 — Commerces</p>
           <h2>Commerces &amp; locaux professionnels</h2>
           <p>Les commerces et locaux professionnels nécessitent une surveillance adaptée à leur activité et à leurs horaires.</p>
@@ -102,22 +100,18 @@
             <li>Signalement des anomalies</li>
           </ul>
         </div>
-        <figure class="media-frame">
-          <img src="img/commerce.jpg" alt="Locaux professionnels" width="1600" height="1068" loading="lazy">
-        </figure>
+        <img src="img/commerce.jpg" alt="Locaux professionnels" width="1600" height="1068" loading="lazy">
       </div>
     </section>
 
-    <section class="section">
-      <div class="wrap">
-        <div class="cta cta-wide">
-          <div>
-            <p class="kicker kicker-light">Prochaine étape</p>
-            <h2>Parlons de votre site.</h2>
-            <p>Une étude de besoin et une visite permettent de définir un dispositif cohérent, sans solution standard.</p>
-          </div>
-          <a class="btn btn-white" href="contact.html">Nous contacter</a>
+    <section class="band">
+      <div class="wrap band-grid">
+        <div>
+          <p class="kicker kicker-light">Prochaine étape</p>
+          <h2>Parlons de votre site.</h2>
+          <p>Une étude de besoin et une visite permettent de définir un dispositif cohérent, sans solution standard.</p>
         </div>
+        <a class="btn btn-white" href="contact.html">Nous contacter</a>
       </div>
     </section>
   </main>
