@@ -3,154 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Notre approche — Vé Garde</title>
-  <meta name="description" content="Avant chaque prestation, Vé Garde analyse le site, définit le dispositif et organise la présence des agents selon un processus en six postes.">
-  <meta name="theme-color" content="#07141C">
+  <title>Vé Garde — Planche 01 · Méthode</title>
+  <meta name="description" content="Six postes pour organiser un site : analyse, visite, dispositif, consignes, déploiement, suivi.">
+  <meta name="theme-color" content="#eae2d0">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page-inner">
+<body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
-
-  <header class="site-header" data-header>
-    <div class="header-inner">
+  <div class="sheet">
+    <header class="sheet-head">
       <a class="brand" href="index.html" aria-label="Vé Garde — Accueil">
-        <span class="mark" aria-hidden="true"></span>
-        <span class="wordmark">
-          <span class="wordmark-name">VÉ GARDE</span>
-          <span class="wordmark-sub">Sécurité privée</span>
+        <span class="stamp">VG</span>
+        <span>
+          <span class="brand-name">VÉ GARDE</span>
+          <span class="brand-meta">Planche 01 — Méthode</span>
         </span>
       </a>
-      <nav class="nav-desktop" aria-label="Navigation principale">
-        <a href="index.html"><b>00</b>Accueil</a>
-        <a href="approche.html" aria-current="page"><b>01</b>Approche</a>
-        <a href="services.html"><b>02</b>Services</a>
-        <a href="secteurs.html"><b>03</b>Secteurs</a>
-        <a href="contact.html"><b>04</b>Contact</a>
+      <nav class="nav-desktop" aria-label="Planches">
+        <a href="index.html"><b>00</b>Ensemble</a>
+        <a href="approche.html" aria-current="page"><b>01</b>Méthode</a>
+        <a href="services.html"><b>02</b>Fiches</a>
+        <a href="secteurs.html"><b>03</b>Sites</a>
+        <a href="contact.html"><b>04</b>Étude</a>
       </nav>
-      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu">
-        <span></span>
-      </button>
-    </div>
-  </header>
-
-  <nav class="nav-mobile" id="menu-mobile" data-menu aria-label="Menu mobile">
-    <a href="index.html">00 Accueil</a>
-    <a href="approche.html" aria-current="page">01 Approche</a>
-    <a href="services.html">02 Services</a>
-    <a href="secteurs.html">03 Secteurs</a>
-    <a href="contact.html">04 Contact</a>
-    <p class="nav-mobile-meta">El Jadida · 33.256°N · Maroc</p>
-  </nav>
-
-  <main id="contenu">
-    <header class="page-hero">
-      <div class="page-hero-media">
-        <img src="img/approach.jpg" alt="Architecture contemporaine et volumes structurés" width="1800" height="1205">
-      </div>
-      <div class="page-hero-content">
-        <p class="eyebrow">VG-01 · Dispositif</p>
-        <h1>Une sécurité adaptée à chaque site</h1>
-        <p class="lede muted">Comprendre, organiser, déployer, suivre. Un dispositif cohérent avec la mission confiée.</p>
-      </div>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
+      <nav class="nav-mobile" id="menu-mobile" data-menu>
+      <a href="index.html">00 Ensemble</a>
+      <a href="approche.html" aria-current="page">01 Méthode</a>
+      <a href="services.html">02 Fiches</a>
+      <a href="secteurs.html">03 Sites</a>
+      <a href="contact.html">04 Étude</a>
+    </nav>
     </header>
 
-    <section class="section light">
-      <div class="container split">
-        <div class="split-copy reveal">
-          <p class="eyebrow">Le principe</p>
-          <h2>Le site d’abord.</h2>
-          <p>Chaque site possède ses propres contraintes, ses accès, ses flux et ses points de vigilance.</p>
-          <p>Avant la mise en place d’une prestation, nous cherchons à comprendre l’environnement du site et les besoins du client afin de définir un dispositif de sécurité cohérent avec la mission confiée.</p>
-        </div>
-        <figure class="media-frame reveal delay-2">
-          <img src="img/entrance.jpg" alt="Architecture contemporaine aux volumes géométriques" width="2000" height="2831">
-          <figcaption class="media-caption">Accès · Flux · Périmètre</figcaption>
-        </figure>
+    <main id="contenu" class="sheet-body">
+      <div class="page-intro">
+        <h1>Le site d’abord.</h1>
+        <p>Chaque site possède ses propres contraintes, ses accès, ses flux et ses points de vigilance. La méthode n’est pas une liste de services : c’est le chemin qu’on parcourt autour du terrain — une ronde de six postes, avant même d’affecter un agent.</p>
       </div>
-    </section>
+      <ol class="path">
+        <li class="station" id="p1" data-n="1">
+          <h2>Analyse du besoin</h2>
+          <p>Comprendre l’activité, les horaires, les accès et les principales contraintes du site. Cette première lecture évite un dispositif générique.</p>
+        </li>
+        <li class="station" id="p2" data-n="2">
+          <h2>Visite du site</h2>
+          <p>Identifier les points d’accès, les zones à surveiller, les flux de personnes et de véhicules ainsi que les besoins spécifiques. La visite révèle ce que les plans ne disent pas toujours.</p>
+        </li>
+        <li class="station" id="p3" data-n="3">
+          <h2>Organisation du dispositif</h2>
+          <p>Définir les postes, les horaires, les rondes et les responsabilités selon le périmètre convenu. L’organisation transforme une intention de sécurité en présence concrète.</p>
+        </li>
+        <li class="station" id="p4" data-n="4">
+          <h2>Consignes de sécurité</h2>
+          <p>Mettre en place des consignes adaptées au fonctionnement du site et aux situations à signaler. Un cadre d’intervention lisible, partagé avec le client.</p>
+        </li>
+        <li class="station" id="p5" data-n="5">
+          <h2>Déploiement</h2>
+          <p>Affecter les agents et assurer leur briefing avant la prise de poste. Le déploiement transmet le site, les consignes et les attentes.</p>
+        </li>
+        <li class="station" id="p6" data-n="6">
+          <h2>Suivi</h2>
+          <p>Contrôler l’exécution des consignes, suivre les anomalies et maintenir un échange régulier avec le client. Ajuster lorsque les besoins évoluent.</p>
+        </li>
+      </ol>
+      <p class="notice"><a class="btn btn-stamp" href="contact.html">Ouvrir une étude de site</a></p>
+    </main>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Les six postes</p>
-          <h2>Six étapes, une méthode.</h2>
-        </div>
-        <ol class="detail-list">
-          <li class="detail-item reveal">
-            <span class="process-num">Poste 01 — Analyse du besoin</span>
-            <h3>Comprendre avant d’organiser</h3>
-            <p class="muted">Comprendre l’activité, les horaires, les accès et les principales contraintes du site. Cette première lecture permet d’éviter un dispositif générique et d’ancrer la prestation dans le réel.</p>
-          </li>
-          <li class="detail-item reveal">
-            <span class="process-num">Poste 02 — Visite du site</span>
-            <h3>Lire le terrain</h3>
-            <p class="muted">Identifier les points d’accès, les zones à surveiller, les flux de personnes et de véhicules ainsi que les besoins spécifiques. La visite affine l’analyse et révèle ce que les plans ne disent pas toujours.</p>
-          </li>
-          <li class="detail-item reveal">
-            <span class="process-num">Poste 03 — Organisation du dispositif</span>
-            <h3>Structurer la présence</h3>
-            <p class="muted">Définir les postes, les horaires, les rondes et les responsabilités selon le périmètre convenu. L’organisation est le cœur de la prestation : elle transforme une intention de sécurité en présence concrète.</p>
-          </li>
-          <li class="detail-item reveal">
-            <span class="process-num">Poste 04 — Consignes de sécurité</span>
-            <h3>Un cadre clair pour agir</h3>
-            <p class="muted">Mettre en place des consignes adaptées au fonctionnement du site et aux situations à signaler. Les consignes donnent aux agents un cadre d’intervention lisible, partagé avec le client.</p>
-          </li>
-          <li class="detail-item reveal">
-            <span class="process-num">Poste 05 — Déploiement</span>
-            <h3>Prendre le poste, en connaissance de cause</h3>
-            <p class="muted">Affecter les agents et assurer leur briefing avant la prise de poste. Le déploiement n’est pas une simple mise en place : c’est la transmission du site, des consignes et des attentes.</p>
-          </li>
-          <li class="detail-item reveal">
-            <span class="process-num">Poste 06 — Suivi</span>
-            <h3>Maintenir la qualité dans le temps</h3>
-            <p class="muted">Contrôler l’exécution des consignes, suivre les anomalies et maintenir un échange régulier avec le client. Le suivi permet d’ajuster le dispositif lorsque les besoins évoluent.</p>
-          </li>
-        </ol>
-        <p class="mt-lg reveal"><a class="btn" href="contact.html">Ouvrir un dossier site</a></p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a class="brand" href="index.html">
-            <span class="mark" aria-hidden="true"></span>
-            <span class="wordmark">
-              <span class="wordmark-name">VÉ GARDE</span>
-              <span class="wordmark-sub">Sécurité privée</span>
-            </span>
-          </a>
-        </div>
-        <div class="footer-col">
-          <h3>Navigation</h3>
-          <a href="approche.html">01 Approche</a>
-          <a href="services.html">02 Services</a>
-          <a href="secteurs.html">03 Secteurs</a>
-          <a href="contact.html">04 Contact</a>
-        </div>
-        <div class="footer-col">
-          <h3>Contact</h3>
-          <p>El Jadida, Maroc</p>
-          <p class="placeholder">[Adresse du siège]</p>
-        </div>
-        <div class="footer-col">
-          <h3>Informations</h3>
-          <a href="mentions-legales.html">Mentions légales</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© <span data-year>2026</span> Vé Garde</p>
-        <p>33.256°N · El Jadida · Maroc</p>
-      </div>
-    </div>
-  </footer>
+    <footer class="cartouche">
+      <dl>
+        <div><dt>Projet</dt><dd>Méthode à six postes</dd></div>
+        <div><dt>Lieu</dt><dd>El Jadida, Maroc</dd></div>
+        <div><dt>Échelle</dt><dd>1 analyse → 6 suivi</dd></div>
+        <div><dt>Feuille</dt><dd>01 / 04</dd></div>
+      </dl>
+      <div class="who"><strong>VÉ GARDE</strong><span>Le chemin autour du site</span></div>
+    </footer>
+  </div>
   <script src="js/main.js"></script>
 </body>
 </html>

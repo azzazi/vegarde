@@ -3,321 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vé Garde — Sécurité privée à El Jadida</title>
-  <meta name="description" content="Vé Garde organise le gardiennage et la surveillance autour de chaque site : accès, consignes, présence des agents et suivi. El Jadida, Maroc.">
-  <meta name="theme-color" content="#07141C">
-  <meta property="og:title" content="Vé Garde — Le périmètre, organisé">
-  <meta property="og:description" content="Une présence organisée. Une vigilance constante.">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="fr_MA">
+  <title>Vé Garde — Planche 00 · Ensemble</title>
+  <meta name="description" content="Vé Garde organise le gardiennage autour du plan de chaque site : accès, postes, rondes et consignes. El Jadida, Maroc.">
+  <meta name="theme-color" content="#eae2d0">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
-
-  <header class="site-header" data-header>
-    <div class="header-inner">
+  <div class="sheet">
+    <header class="sheet-head">
       <a class="brand" href="index.html" aria-label="Vé Garde — Accueil">
-        <span class="mark" aria-hidden="true"></span>
-        <span class="wordmark">
-          <span class="wordmark-name">VÉ GARDE</span>
-          <span class="wordmark-sub">Sécurité privée</span>
+        <span class="stamp">VG</span>
+        <span>
+          <span class="brand-name">VÉ GARDE</span>
+          <span class="brand-meta">Planche 00 — Ensemble</span>
         </span>
       </a>
-      <nav class="nav-desktop" aria-label="Navigation principale">
-        <a href="index.html" aria-current="page"><b>00</b>Accueil</a>
-        <a href="approche.html"><b>01</b>Approche</a>
-        <a href="services.html"><b>02</b>Services</a>
-        <a href="secteurs.html"><b>03</b>Secteurs</a>
-        <a href="contact.html"><b>04</b>Contact</a>
+      <nav class="nav-desktop" aria-label="Planches">
+        <a href="index.html" aria-current="page"><b>00</b>Ensemble</a>
+        <a href="approche.html"><b>01</b>Méthode</a>
+        <a href="services.html"><b>02</b>Fiches</a>
+        <a href="secteurs.html"><b>03</b>Sites</a>
+        <a href="contact.html"><b>04</b>Étude</a>
       </nav>
-      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu">
-        <span></span>
-      </button>
-    </div>
-  </header>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
+      <nav class="nav-mobile" id="menu-mobile" data-menu>
+      <a href="index.html" aria-current="page">00 Ensemble</a>
+      <a href="approche.html">01 Méthode</a>
+      <a href="services.html">02 Fiches</a>
+      <a href="secteurs.html">03 Sites</a>
+      <a href="contact.html">04 Étude</a>
+    </nav>
+    </header>
 
-  <nav class="nav-mobile" id="menu-mobile" data-menu aria-label="Menu mobile">
-    <a href="index.html" aria-current="page">00 Accueil</a>
-    <a href="approche.html">01 Approche</a>
-    <a href="services.html">02 Services</a>
-    <a href="secteurs.html">03 Secteurs</a>
-    <a href="contact.html">04 Contact</a>
-    <p class="nav-mobile-meta">El Jadida · 33.256°N · Maroc</p>
-  </nav>
-
-  <main id="contenu">
-    <section class="hero">
-      <div class="hero-media">
-        <img src="img/hero.jpg" alt="Résidence contemporaine éclairée au crépuscule" width="2000" height="1333">
-      </div>
-      <div class="hero-plan" aria-hidden="true">
-        <span class="corner tl"></span>
-        <span class="corner tr"></span>
-        <span class="corner bl"></span>
-        <span class="corner br"></span>
-        <span class="plan-tag n">Périmètre</span>
-        <span class="plan-tag w">Ronde</span>
-        <span class="gap">Accès</span>
-        <span class="patrol-dot"></span>
-      </div>
-      <div class="hero-content">
-        <p class="hero-kicker">VG-00 · El Jadida · 33.256°N 8.508°W</p>
-        <h1>Une présence organisée.<br>Une vigilance constante.</h1>
-        <p>Vé Garde n’applique pas un dispositif standard. Chaque site a ses accès, ses flux, son périmètre. Nous les organisons.</p>
-        <div class="hero-actions">
-          <a class="btn" href="contact.html">Demander une étude de site</a>
-          <a class="btn btn-ghost" href="approche.html">Lire le dispositif</a>
+    <main id="contenu" class="sheet-body">
+      <div class="board">
+        <div class="drawing">
+          <div class="plan-toolbar" data-plan-switch>
+            <button type="button" data-site="chantier">Chantier</button>
+            <button type="button" data-site="residence" aria-pressed="true">Résidence</button>
+            <button type="button" data-site="commerce">Commerce</button>
+          </div>
+          <div class="plan-host" data-plan-host>Chargement du plan…</div>
+          <nav class="scalebar" aria-label="Méthode — échelle du dispositif">
+            <a href="approche.html#p1"><b>1</b>Analyse</a>
+            <a href="approche.html#p2"><b>2</b>Visite</a>
+            <a href="approche.html#p3"><b>3</b>Organisation</a>
+            <a href="approche.html#p4"><b>4</b>Consignes</a>
+            <a href="approche.html#p5"><b>5</b>Déploiement</a>
+            <a href="approche.html#p6"><b>6</b>Suivi</a>
+          </nav>
         </div>
-        <p class="scroll-hint" aria-hidden="true"><i></i> Parcours</p>
+        <aside class="legend">
+          <h1>Une présence organisée. Une vigilance constante.</h1>
+          <p class="lead">Ceci n’est pas une page d’accueil. C’est le plan d’un site. Vé Garde lit un terrain comme un dessin : accès, flux, postes, rondes.</p>
+          <ol class="callouts">
+            <li data-hot="p1" tabindex="0"><b>1</b><span>Accès — contrôle et filtrage des entrées et sorties.</span></li>
+            <li data-hot="p2" tabindex="0"><b>2</b><span>Locaux — surveillance des bâtiments et installations.</span></li>
+            <li data-hot="p3" tabindex="0"><b>3</b><span>Périmètre — lecture des limites et des espaces extérieurs.</span></li>
+            <li data-hot="p4" tabindex="0"><b>4</b><span>Véhicules — parking, livraisons, mouvements de matériel.</span></li>
+            <li data-hot="p5" tabindex="0"><b>5</b><span>Zone sensible — consignes particulières, signalement prioritaire.</span></li>
+            <li data-hot="p6" tabindex="0"><b>6</b><span>Ronde — parcours organisé selon le site, pas un circuit type.</span></li>
+          </ol>
+          <div class="actions">
+            <a class="btn btn-stamp" href="contact.html">Ouvrir une étude de site</a>
+            <a class="btn" href="approche.html">Lire la méthode</a>
+          </div>
+        </aside>
       </div>
-    </section>
 
-    <section class="section light">
-      <div class="container split">
-        <div class="split-copy reveal">
-          <p class="eyebrow">La société</p>
-          <h2>Le site d’abord.</h2>
-          <p class="lede muted-light">Société marocaine de sécurité privée, dédiée au gardiennage et à la surveillance des sites professionnels, résidentiels et en construction.</p>
-          <p>Vé Garde est une société marocaine spécialisée dans la sécurité privée, dédiée au gardiennage et à la surveillance des sites professionnels, résidentiels et en construction.</p>
-          <p>Notre approche repose sur une organisation adaptée à chaque site : comprendre les besoins, définir les consignes, organiser la présence des agents et assurer le suivi de la prestation.</p>
-        </div>
-        <figure class="media-frame reveal delay-2">
-          <img src="img/presence.jpg" alt="Immeuble contemporain vu depuis le sol" width="2000" height="1333" loading="lazy">
-          <figcaption class="media-caption">VG · El Jadida · Maroc</figcaption>
+      <section class="notice">
+        <h2>Note de service</h2>
+        <p>Vé Garde est une société marocaine spécialisée dans la sécurité privée, dédiée au gardiennage et à la surveillance des sites professionnels, résidentiels et en construction.</p>
+        <p>Notre approche repose sur une organisation adaptée à chaque site : comprendre les besoins, définir les consignes, organiser la présence des agents et assurer le suivi de la prestation. Changez le type de site sur le plan — le dessin change, la méthode reste.</p>
+        <figure class="annex">
+          <img src="img/agents.jpg" alt="Immeuble contemporain, annexe photographique" width="1800" height="2400">
+          <p>Annexe photo — présence sur le terrain. L’agent est le premier contact du site. Sélection, présentation, ponctualité, vigilance, respect des consignes.</p>
         </figure>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Dispositif VG-01</p>
-          <h2>Une sécurité adaptée à chaque site</h2>
-          <p class="muted">Chaque site possède ses propres contraintes, ses accès, ses flux et ses points de vigilance. Avant la mise en place d’une prestation, nous cherchons à comprendre l’environnement du site et les besoins du client afin de définir un dispositif de sécurité cohérent avec la mission confiée.</p>
+    <footer class="cartouche">
+      <dl>
+        <div>
+          <dt>Projet</dt>
+          <dd>Dispositif de site</dd>
         </div>
-        <ol class="ronde">
-          <li class="ronde-item reveal">
-            <span class="ronde-num">Poste 01</span>
-            <h3>Analyse du besoin</h3>
-            <p>Comprendre l’activité, les horaires, les accès et les principales contraintes du site.</p>
-          </li>
-          <li class="ronde-item reveal delay-1">
-            <span class="ronde-num">Poste 02</span>
-            <h3>Visite du site</h3>
-            <p>Identifier les points d’accès, les zones à surveiller, les flux de personnes et de véhicules ainsi que les besoins spécifiques.</p>
-          </li>
-          <li class="ronde-item reveal">
-            <span class="ronde-num">Poste 03</span>
-            <h3>Organisation du dispositif</h3>
-            <p>Définir les postes, les horaires, les rondes et les responsabilités selon le périmètre convenu.</p>
-          </li>
-          <li class="ronde-item reveal delay-1">
-            <span class="ronde-num">Poste 04</span>
-            <h3>Consignes de sécurité</h3>
-            <p>Mettre en place des consignes adaptées au fonctionnement du site et aux situations à signaler.</p>
-          </li>
-          <li class="ronde-item reveal">
-            <span class="ronde-num">Poste 05</span>
-            <h3>Déploiement</h3>
-            <p>Affecter les agents et assurer leur briefing avant la prise de poste.</p>
-          </li>
-          <li class="ronde-item reveal delay-1">
-            <span class="ronde-num">Poste 06</span>
-            <h3>Suivi</h3>
-            <p>Contrôler l’exécution des consignes, suivre les anomalies et maintenir un échange régulier avec le client.</p>
-          </li>
-        </ol>
-        <p class="mt-lg reveal"><a class="btn" href="approche.html">Parcourir les six postes</a></p>
+        <div>
+          <dt>Lieu</dt>
+          <dd>El Jadida, Maroc</dd>
+        </div>
+        <div>
+          <dt>Échelle</dt>
+          <dd>1 analyse → 6 suivi</dd>
+        </div>
+        <div>
+          <dt>Feuille</dt>
+          <dd>00 / 04</dd>
+        </div>
+      </dl>
+      <div class="who">
+        <strong>VÉ GARDE</strong>
+        <span>Sécurité privée · Gardiennage · Surveillance</span>
+        <span data-year>2026</span>
+        · <a href="mentions-legales.html">Cartouche légal</a>
       </div>
-    </section>
-
-    <section class="section light">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Fiches de poste</p>
-          <h2>Une prestation structurée autour de six éléments</h2>
-        </div>
-        <div class="fiches">
-          <article class="fiche reveal">
-            <div class="fiche-head"><span>VG-SRV-01</span><span>Poste</span></div>
-            <h3>Gardiennage</h3>
-            <p>Présence d’agents de sécurité sur site selon les horaires et le dispositif définis avec le client. Surveillance des accès, des installations, des espaces extérieurs et des zones sensibles.</p>
-          </article>
-          <article class="fiche reveal delay-1">
-            <div class="fiche-head"><span>VG-SRV-02</span><span>Veille</span></div>
-            <h3>Surveillance</h3>
-            <p>Une présence attentive destinée à détecter et signaler les situations inhabituelles, les anomalies ou les comportements nécessitant une attention particulière.</p>
-          </article>
-          <article class="fiche reveal delay-2">
-            <div class="fiche-head"><span>VG-SRV-03</span><span>Seuil</span></div>
-            <h3>Contrôle d’accès</h3>
-            <p>Contrôle et filtrage des entrées et sorties selon les procédures établies : employés, résidents, visiteurs, fournisseurs, véhicules, matériels et équipements.</p>
-          </article>
-          <article class="fiche reveal">
-            <div class="fiche-head"><span>VG-SRV-04</span><span>Parcours</span></div>
-            <h3>Rondes</h3>
-            <p>Des rondes organisées selon les caractéristiques du site et les consignes définies, pour vérifier les zones concernées et identifier les anomalies.</p>
-          </article>
-          <article class="fiche reveal delay-1">
-            <div class="fiche-head"><span>VG-SRV-05</span><span>Cadre</span></div>
-            <h3>Consignes</h3>
-            <p>Les agents interviennent dans le cadre de consignes définies pour le site : règles d’accès, points de contrôle, rondes, situations à signaler et procédures d’incident.</p>
-          </article>
-          <article class="fiche reveal delay-2">
-            <div class="fiche-head"><span>VG-SRV-06</span><span>Trace</span></div>
-            <h3>Signalement</h3>
-            <p>Les événements et anomalies observés peuvent être consignés et remontés selon les procédures convenues, pour une communication claire entre le site et Vé Garde.</p>
-          </article>
-        </div>
-        <p class="mt-lg reveal"><a class="btn btn-dark" href="services.html">Ouvrir les fiches</a></p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container-wide">
-        <div class="section-head reveal">
-          <p class="eyebrow">Cartographie</p>
-          <h2>Trois environnements. Une même exigence.</h2>
-        </div>
-        <div class="sectors-grid">
-          <a class="dossier reveal" href="secteurs.html#chantiers">
-            <img src="img/chantier.jpg" alt="Chantier de construction" width="1800" height="1200" loading="lazy">
-            <span class="dossier-stamp">VG-CH-01</span>
-            <div class="dossier-body">
-              <h3>Chantiers &amp; sites en construction</h3>
-              <p>Contrôle des accès, surveillance du périmètre, véhicules, rondes et signalement des anomalies.</p>
-            </div>
-          </a>
-          <a class="dossier reveal delay-1" href="secteurs.html#residences">
-            <img src="img/residence.jpg" alt="Résidence contemporaine" width="1800" height="1200" loading="lazy">
-            <span class="dossier-stamp">VG-RS-02</span>
-            <div class="dossier-body">
-              <h3>Résidences &amp; copropriétés</h3>
-              <p>Gestion des accès, contrôle des visiteurs et prestataires, surveillance des espaces communs.</p>
-            </div>
-          </a>
-          <a class="dossier reveal delay-2" href="secteurs.html#commerces">
-            <img src="img/commerce.jpg" alt="Locaux professionnels" width="1800" height="1202" loading="lazy">
-            <span class="dossier-stamp">VG-CM-03</span>
-            <div class="dossier-body">
-              <h3>Commerces &amp; locaux professionnels</h3>
-              <p>Surveillance adaptée à l’activité et aux horaires, rondes et signalement des anomalies.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section light">
-      <div class="container split reverse">
-        <div class="split-copy reveal">
-          <p class="eyebrow">Présence</p>
-          <h2>Une présence professionnelle sur le terrain</h2>
-          <p>L’agent de sécurité représente le premier contact de la prestation avec le site et ses occupants.</p>
-          <p>Nous accordons une attention particulière à la sélection, à la présentation, à la ponctualité, à la vigilance et au respect des consignes.</p>
-          <p>Chaque agent intervient dans le cadre des responsabilités définies pour son poste et selon les procédures applicables au site.</p>
-        </div>
-        <figure class="media-frame reveal delay-2">
-          <img src="img/agents.jpg" alt="Architecture résidentielle contemporaine" width="1800" height="2400" loading="lazy">
-          <figcaption class="media-caption">Présence · Discrétion · Rigueur</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Consignes permanentes</p>
-          <h2>Des principes simples, appliqués sur le terrain</h2>
-        </div>
-        <div class="values-grid">
-          <article class="value-card reveal">
-            <span class="value-index">01</span>
-            <h3>Clarté</h3>
-            <p>Des missions et des consignes définies avant le démarrage de la prestation.</p>
-          </article>
-          <article class="value-card reveal delay-1">
-            <span class="value-index">02</span>
-            <h3>Vigilance</h3>
-            <p>Une présence attentive et une observation constante dans le cadre de la mission.</p>
-          </article>
-          <article class="value-card reveal delay-2">
-            <span class="value-index">03</span>
-            <h3>Discipline</h3>
-            <p>Le respect des horaires, des consignes et des procédures établies.</p>
-          </article>
-          <article class="value-card reveal">
-            <span class="value-index">04</span>
-            <h3>Réactivité</h3>
-            <p>La remontée rapide des anomalies et des événements nécessitant l’attention du client.</p>
-          </article>
-          <article class="value-card reveal delay-1">
-            <span class="value-index">05</span>
-            <h3>Suivi</h3>
-            <p>Une attention portée à la qualité d’exécution de la prestation et à son adaptation lorsque les besoins évoluent.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-band">
-      <div class="container reveal">
-        <p class="eyebrow">VG · El Jadida</p>
-        <h2>La sécurité, organisée autour de votre site.</h2>
-        <p>Sécurité privée · Gardiennage · Surveillance — un dispositif, un périmètre, un suivi.</p>
-        <div class="hero-actions">
-          <a class="btn" href="contact.html">Ouvrir un dossier</a>
-          <a class="btn btn-ghost" href="services.html">Fiches de poste</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a class="brand" href="index.html">
-            <span class="mark" aria-hidden="true"></span>
-            <span class="wordmark">
-              <span class="wordmark-name">VÉ GARDE</span>
-              <span class="wordmark-sub">Sécurité privée</span>
-            </span>
-          </a>
-          <p class="muted footer-lead">Le périmètre, organisé. La vigilance, constante.</p>
-        </div>
-        <div class="footer-col">
-          <h3>Navigation</h3>
-          <a href="approche.html">01 Approche</a>
-          <a href="services.html">02 Services</a>
-          <a href="secteurs.html">03 Secteurs</a>
-          <a href="contact.html">04 Contact</a>
-        </div>
-        <div class="footer-col">
-          <h3>Contact</h3>
-          <p>El Jadida, Maroc</p>
-          <p class="placeholder">[Adresse du siège]</p>
-          <p class="placeholder">Tél. [Numéro de téléphone]</p>
-          <p class="placeholder">[Adresse e-mail]</p>
-        </div>
-        <div class="footer-col">
-          <h3>Informations</h3>
-          <a href="mentions-legales.html">Mentions légales</a>
-          <p>RC · ICE · IF · CNSS</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© <span data-year>2026</span> Vé Garde</p>
-        <p>33.256°N · El Jadida · Maroc</p>
-      </div>
-    </div>
-  </footer>
-
+    </footer>
+  </div>
   <script src="js/main.js"></script>
 </body>
 </html>
