@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 44" role="img" aria-label="Vé Garde">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 44" role="img" aria-label="Ve Garde">
   <path d="M20 2 L36 8.2 V21 C36 31.8 29.4 38.9 20 42 C10.6 38.9 4 31.8 4 21 V8.2 Z" fill="#031F30"/>
   <path d="M12.5 14 L20 29 L27.5 14" fill="none" stroke="#FC273F" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="46" y="26" font-family="ProximaNova, Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="1.5" fill="#031F30">VÉ GARDE</text>
-  <text x="46" y="39" font-family="ProximaNova, Arial, sans-serif" font-size="9" letter-spacing="2.6" fill="#8095a3">SÉCURITÉ PRIVÉE</text>
+  <text x="46" y="26" font-family="ProximaNova, Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="1.5" fill="#031F30">V&#201; GARDE</text>
+  <text x="46" y="39" font-family="ProximaNova, Arial, sans-serif" font-size="9" letter-spacing="2.6" fill="#8095a3">S&#201;CURIT&#201; PRIV&#201;E</text>
 </svg>
