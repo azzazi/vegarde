@@ -5,54 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mentions légales — Vé Garde</title>
   <meta name="description" content="Identification légale de Vé Garde, El Jadida.">
-  <meta name="theme-color" content="#07090d">
+  <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a class="skip" href="#contenu">Aller au contenu</a>
   <header class="top">
-    <a class="brand" href="index.html" aria-label="Vé Garde — Accueil"><i></i>Vé Garde</a>
-    <nav class="nav-desk" aria-label="Principal">
-      <a href="index.html">Accueil</a>
-      <a href="approche.html">Méthode</a>
-      <a href="services.html">Missions</a>
-      <a href="secteurs.html">Sites</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <button class="burger" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Vé Garde — Accueil">
+        <img src="img/logo.svg" alt="Vé Garde" width="224" height="44">
+      </a>
+      <nav class="nav-desk" aria-label="Principal">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="approche.html">Notre approche</a>
+        <a href="secteurs.html">Secteurs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn-red" href="contact.html">Demander une étude</a>
+      <button class="burger" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
+    </div>
   </header>
   <nav class="nav-mob" id="menu-mobile" data-menu>
     <a href="index.html">Accueil</a>
-    <a href="approche.html">Méthode</a>
-    <a href="services.html">Missions</a>
-    <a href="secteurs.html">Sites</a>
+    <a href="services.html">Services</a>
+    <a href="approche.html">Notre approche</a>
+    <a href="secteurs.html">Secteurs</a>
     <a href="contact.html">Contact</a>
+    <a class="btn btn-red" href="contact.html">Demander une étude</a>
   </nav>
 
-  <main id="contenu" class="page">
-    <header class="intro">
-      <p class="kicker">Identification</p>
+  <main id="contenu">
+    <div class="wrap page-hero">
+      <p class="kicker">Informations légales</p>
       <h1>Mentions légales</h1>
-      <p class="lead">À compléter dès réception des pièces officielles.</p>
-    </header>
-    <dl class="legal">
-      <div><dt>Dénomination</dt><dd>Vé Garde</dd></div>
-      <div><dt>Forme juridique</dt><dd class="placeholder">[Forme juridique]</dd></div>
-      <div><dt>RC</dt><dd class="placeholder">[Numéro du Registre de Commerce]</dd></div>
-      <div><dt>ICE</dt><dd class="placeholder">[Identifiant Commun de l’Entreprise]</dd></div>
-      <div><dt>IF</dt><dd class="placeholder">[Identifiant Fiscal]</dd></div>
-      <div><dt>CNSS</dt><dd class="placeholder">[Numéro CNSS]</dd></div>
-      <div><dt>Agrément</dt><dd class="placeholder">[Référence, si applicable]</dd></div>
-      <div><dt>Siège</dt><dd><span class="placeholder">[Adresse complète]</span> — El Jadida, Maroc</dd></div>
-    </dl>
+      <p class="lead">Informations d’identification — à compléter dès réception des pièces officielles.</p>
+    </div>
+
+    <section class="section">
+      <div class="wrap">
+        <dl class="legal-list">
+          <div><dt>Dénomination</dt><dd>Vé Garde</dd></div>
+          <div><dt>Forme juridique</dt><dd class="placeholder">[Forme juridique]</dd></div>
+          <div><dt>Registre de Commerce (RC)</dt><dd class="placeholder">[Numéro du Registre de Commerce]</dd></div>
+          <div><dt>ICE</dt><dd class="placeholder">[Identifiant Commun de l’Entreprise]</dd></div>
+          <div><dt>Identifiant Fiscal (IF)</dt><dd class="placeholder">[Identifiant Fiscal]</dd></div>
+          <div><dt>CNSS</dt><dd class="placeholder">[Numéro CNSS]</dd></div>
+          <div><dt>Agrément</dt><dd class="placeholder">[Référence, si applicable]</dd></div>
+          <div><dt>Siège social</dt><dd><span class="placeholder">[Adresse complète]</span> — El Jadida, Maroc</dd></div>
+        </dl>
+      </div>
+    </section>
   </main>
 
   <footer class="foot">
-    <p><strong>Vé Garde</strong> · <a href="index.html">Retour à l’accueil</a></p>
+    <div class="wrap">
+      <div>
+        <p class="brand">Vé Garde</p>
+        <p>Sécurité privée · Gardiennage · Surveillance<br>El Jadida, Maroc</p>
+      </div>
+      <nav aria-label="Pied de page">
+        <a href="services.html">Services</a>
+        <a href="approche.html">Notre approche</a>
+        <a href="secteurs.html">Secteurs</a>
+        <a href="contact.html">Contact</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+      </nav>
+      <p class="legal"><span>© <span data-year>2026</span> Vé Garde. Tous droits réservés.</span></p>
+    </div>
   </footer>
   <script src="js/main.js"></script>
 </body>

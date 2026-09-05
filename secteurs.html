@@ -3,81 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sites — Vé Garde</title>
-  <meta name="description" content="Chantier, résidence, commerce : le dispositif suit le terrain.">
-  <meta name="theme-color" content="#07090d">
+  <title>Secteurs d’intervention — Vé Garde</title>
+  <meta name="description" content="Chantiers, résidences et commerces : des dispositifs de sécurité adaptés à chaque environnement.">
+  <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a class="skip" href="#contenu">Aller au contenu</a>
   <header class="top">
-    <a class="brand" href="index.html" aria-label="Vé Garde — Accueil"><i></i>Vé Garde</a>
-    <nav class="nav-desk" aria-label="Principal">
-      <a href="index.html">Accueil</a>
-      <a href="approche.html">Méthode</a>
-      <a href="services.html">Missions</a>
-      <a href="secteurs.html" aria-current="page">Sites</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <button class="burger" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Vé Garde — Accueil">
+        <img src="img/logo.svg" alt="Vé Garde" width="224" height="44">
+      </a>
+      <nav class="nav-desk" aria-label="Principal">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="approche.html">Notre approche</a>
+        <a href="secteurs.html" aria-current="page">Secteurs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn-red" href="contact.html">Demander une étude</a>
+      <button class="burger" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
+    </div>
   </header>
   <nav class="nav-mob" id="menu-mobile" data-menu>
     <a href="index.html">Accueil</a>
-    <a href="approche.html">Méthode</a>
-    <a href="services.html">Missions</a>
-    <a href="secteurs.html" aria-current="page">Sites</a>
+    <a href="services.html">Services</a>
+    <a href="approche.html">Notre approche</a>
+    <a href="secteurs.html" aria-current="page">Secteurs</a>
     <a href="contact.html">Contact</a>
+    <a class="btn btn-red" href="contact.html">Demander une étude</a>
   </nav>
 
   <main id="contenu">
-    <section class="worlds" data-scene>
-      <div class="stage-media">
-        <img data-scene-img src="img/chantier.jpg" alt="Site en construction" width="1600" height="1067">
-        <div class="stage-veil"></div>
-      </div>
-      <div class="stage-copy">
-        <p class="kicker">Le dispositif suit le site</p>
-        <h1>Trois atmosphères. Une exigence.</h1>
-        <p class="lead" data-scene-caption>Chantier — mouvements importants de personnel, fournisseurs, véhicules et matériel.</p>
-        <div class="pills" data-site-switch>
-          <button type="button" data-site="chantier" data-src="img/chantier.jpg" data-caption="Chantier — mouvements importants de personnel, fournisseurs, véhicules et matériel." aria-pressed="true">Chantier</button>
-          <button type="button" data-site="residence" data-src="img/residence.jpg" data-caption="Résidence — présence organisée et gestion rigoureuse des accès.">Résidence</button>
-          <button type="button" data-site="commerce" data-src="img/commerce.jpg" data-caption="Commerce — surveillance adaptée à l’activité et aux horaires.">Commerce</button>
+    <div class="wrap page-hero">
+      <p class="kicker">Secteurs d’intervention</p>
+      <h1>Le dispositif suit le site</h1>
+      <p class="lead">Même exigence, trois environnements. Chaque terrain impose sa propre organisation : accès, flux, zones sensibles et rondes.</p>
+    </div>
+
+    <section class="section" id="chantiers">
+      <div class="wrap split">
+        <img src="img/chantier.jpg" alt="Chantier de construction avec grues" width="1600" height="1067" loading="lazy">
+        <div>
+          <p class="kicker">Chantiers</p>
+          <h2 style="margin:0.7rem 0">Sites en construction</h2>
+          <p>Les chantiers connaissent des mouvements importants de personnel, de fournisseurs, de véhicules et de matériel. Le dispositif s’organise autour du périmètre et des flux.</p>
+          <ol class="steps" style="margin-top:1.1rem">
+            <li class="step"><div><h3>Contrôle des accès et des véhicules</h3></div></li>
+            <li class="step"><div><h3>Surveillance du périmètre</h3></div></li>
+            <li class="step"><div><h3>Suivi des entrées et sorties</h3></div></li>
+            <li class="step"><div><h3>Rondes et signalement des anomalies</h3></div></li>
+          </ol>
         </div>
-        <ul class="world-notes" id="chantiers">
-          <li>Contrôle des accès</li>
-          <li>Surveillance du périmètre</li>
-          <li>Contrôle des véhicules</li>
-          <li>Suivi des entrées et sorties</li>
-          <li>Rondes</li>
-          <li>Signalement des anomalies</li>
-        </ul>
-        <ul class="world-notes" id="residences" hidden>
-          <li>Contrôle des visiteurs</li>
-          <li>Contrôle des prestataires</li>
-          <li>Gestion des accès</li>
-          <li>Surveillance des espaces communs</li>
-          <li>Contrôle des véhicules</li>
-          <li>Rondes</li>
-        </ul>
-        <ul class="world-notes" id="commerces" hidden>
-          <li>Contrôle des accès</li>
-          <li>Surveillance des locaux</li>
-          <li>Rondes</li>
-          <li>Surveillance des zones extérieures</li>
-          <li>Signalement des anomalies</li>
-        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="residences">
+      <div class="wrap split flip">
+        <img src="img/residence.jpg" alt="Résidence moderne" width="1600" height="1067" loading="lazy">
+        <div>
+          <p class="kicker">Résidences</p>
+          <h2 style="margin:0.7rem 0">Ensembles résidentiels</h2>
+          <p>Les résidences demandent une présence organisée et une gestion rigoureuse des accès, dans le respect du cadre de vie des résidents.</p>
+          <ol class="steps" style="margin-top:1.1rem">
+            <li class="step"><div><h3>Contrôle des visiteurs et prestataires</h3></div></li>
+            <li class="step"><div><h3>Gestion des accès</h3></div></li>
+            <li class="step"><div><h3>Surveillance des espaces communs</h3></div></li>
+            <li class="step"><div><h3>Contrôle des véhicules et rondes</h3></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="commerces">
+      <div class="wrap split">
+        <img src="img/commerce.jpg" alt="Espace commercial" width="1600" height="1068" loading="lazy">
+        <div>
+          <p class="kicker">Commerces</p>
+          <h2 style="margin:0.7rem 0">Locaux professionnels</h2>
+          <p>Les commerces et locaux professionnels bénéficient d’une surveillance adaptée à l’activité et aux horaires : seuil, surface de vente, zones de livraison.</p>
+          <ol class="steps" style="margin-top:1.1rem">
+            <li class="step"><div><h3>Contrôle des accès</h3></div></li>
+            <li class="step"><div><h3>Surveillance des locaux</h3></div></li>
+            <li class="step"><div><h3>Rondes</h3></div></li>
+            <li class="step"><div><h3>Surveillance des zones extérieures</h3></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="cta">
+          <h2>Votre site ne rentre dans aucune case ? Parlons-en.</h2>
+          <a class="btn btn-white" href="contact.html">Demander une étude</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="foot">
-    <p><strong>Vé Garde</strong> · El Jadida</p>
-    <p><a href="mentions-legales.html">Mentions légales</a></p>
+    <div class="wrap">
+      <div>
+        <p class="brand">Vé Garde</p>
+        <p>Sécurité privée · Gardiennage · Surveillance<br>El Jadida, Maroc</p>
+      </div>
+      <nav aria-label="Pied de page">
+        <a href="services.html">Services</a>
+        <a href="approche.html">Notre approche</a>
+        <a href="secteurs.html">Secteurs</a>
+        <a href="contact.html">Contact</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+      </nav>
+      <p class="legal"><span>© <span data-year>2026</span> Vé Garde. Tous droits réservés.</span></p>
+    </div>
   </footer>
   <script src="js/main.js"></script>
 </body>

@@ -3,98 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Méthode — Vé Garde</title>
-  <meta name="description" content="Six temps pour organiser un site : analyse, visite, dispositif, consignes, déploiement, suivi.">
-  <meta name="theme-color" content="#07090d">
+  <title>Notre approche — Vé Garde</title>
+  <meta name="description" content="Six étapes pour organiser la sécurité d’un site : analyse, visite, dispositif, consignes, déploiement, suivi.">
+  <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a class="skip" href="#contenu">Aller au contenu</a>
   <header class="top">
-    <a class="brand" href="index.html" aria-label="Vé Garde — Accueil"><i></i>Vé Garde</a>
-    <nav class="nav-desk" aria-label="Principal">
-      <a href="index.html">Accueil</a>
-      <a href="approche.html" aria-current="page">Méthode</a>
-      <a href="services.html">Missions</a>
-      <a href="secteurs.html">Sites</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <button class="burger" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
+    <div class="wrap">
+      <a class="logo" href="index.html" aria-label="Vé Garde — Accueil">
+        <img src="img/logo.svg" alt="Vé Garde" width="224" height="44">
+      </a>
+      <nav class="nav-desk" aria-label="Principal">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="approche.html" aria-current="page">Notre approche</a>
+        <a href="secteurs.html">Secteurs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="btn btn-red" href="contact.html">Demander une étude</a>
+      <button class="burger" type="button" data-menu-toggle aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span></button>
+    </div>
   </header>
   <nav class="nav-mob" id="menu-mobile" data-menu>
     <a href="index.html">Accueil</a>
-    <a href="approche.html" aria-current="page">Méthode</a>
-    <a href="services.html">Missions</a>
-    <a href="secteurs.html">Sites</a>
+    <a href="services.html">Services</a>
+    <a href="approche.html" aria-current="page">Notre approche</a>
+    <a href="secteurs.html">Secteurs</a>
     <a href="contact.html">Contact</a>
+    <a class="btn btn-red" href="contact.html">Demander une étude</a>
   </nav>
 
-  <main id="contenu" class="page">
-    <header class="intro">
-      <p class="kicker">Six temps</p>
-      <h1>Le site d’abord.</h1>
-      <p class="lead">La méthode n’est pas une liste de services. C’est le chemin qu’on parcourt autour du terrain — avant même d’affecter un agent.</p>
-    </header>
-    <ol class="beats">
-      <li class="beat" id="p1">
-        <p class="n">01</p>
+  <main id="contenu">
+    <div class="wrap page-hero">
+      <p class="kicker">Notre approche</p>
+      <h1>Le site d’abord, le dispositif ensuite</h1>
+      <p class="lead">Chaque site possède ses propres contraintes, ses accès, ses flux et ses points de vigilance. Notre méthode suit six étapes, de la première lecture du terrain au suivi de la prestation.</p>
+    </div>
+
+    <section class="section">
+      <div class="wrap split">
         <div>
-          <h2>Analyse du besoin</h2>
-          <p>Comprendre l’activité, les horaires, les accès et les principales contraintes du site. Cette première lecture évite un dispositif générique.</p>
+          <ol class="steps">
+            <li class="step"><div><h3>Analyse du besoin</h3><p>Comprendre l’activité, les horaires, les accès et les principales contraintes du site. Cette première lecture évite un dispositif générique.</p></div></li>
+            <li class="step"><div><h3>Visite du site</h3><p>Identifier les points d’accès, les zones à surveiller, les flux de personnes et de véhicules ainsi que les besoins spécifiques.</p></div></li>
+            <li class="step"><div><h3>Organisation du dispositif</h3><p>Définir les postes, les horaires, les rondes et les responsabilités selon le périmètre convenu.</p></div></li>
+            <li class="step"><div><h3>Consignes de sécurité</h3><p>Mettre en place des consignes adaptées au fonctionnement du site et aux situations à signaler.</p></div></li>
+            <li class="step"><div><h3>Déploiement</h3><p>Affecter les agents et assurer leur briefing avant la prise de poste.</p></div></li>
+            <li class="step"><div><h3>Suivi</h3><p>Contrôler l’exécution des consignes, suivre les anomalies et maintenir un échange régulier avec le client.</p></div></li>
+          </ol>
         </div>
-        <img src="img/approach.jpg" alt="Lecture d’un site avant le dispositif" width="1600" height="1067">
-      </li>
-      <li class="beat" id="p2">
-        <p class="n">02</p>
+        <img src="img/inspection.jpg" alt="Équipe sur un site en activité" width="1600" height="1060" loading="lazy">
+      </div>
+    </section>
+
+    <section class="section" aria-label="L’agent Vé Garde">
+      <div class="wrap split flip">
         <div>
-          <h2>Visite du site</h2>
-          <p>Identifier les points d’accès, les zones à surveiller, les flux de personnes et de véhicules ainsi que les besoins spécifiques. La visite révèle ce que les plans ne disent pas toujours.</p>
+          <div class="section-head" style="margin-bottom:1.2rem">
+            <p class="kicker">L’agent Vé Garde</p>
+            <h2>Le premier contact du site</h2>
+          </div>
+          <p>L’agent est le premier contact du site. Sa sélection, sa présentation et son comportement reflètent l’image de votre établissement autant que la nôtre.</p>
+          <ol class="steps" style="margin-top:1.2rem">
+            <li class="step"><div><h3>Sélection et encadrement</h3><p>Des agents choisis et encadrés pour le site qui leur est confié.</p></div></li>
+            <li class="step"><div><h3>Ponctualité et présentation</h3><p>Une tenue et une attitude à la hauteur du lieu.</p></div></li>
+            <li class="step"><div><h3>Respect des consignes</h3><p>Un cadre d’intervention connu, appliqué et vérifié.</p></div></li>
+          </ol>
         </div>
-        <img src="img/entrance.jpg" alt="Seuil et accès d’un bâtiment" width="1600" height="1067">
-      </li>
-      <li class="beat" id="p3">
-        <p class="n">03</p>
-        <div>
-          <h2>Organisation du dispositif</h2>
-          <p>Définir les postes, les horaires, les rondes et les responsabilités selon le périmètre convenu. L’organisation transforme une intention de sécurité en présence concrète.</p>
+        <img src="img/presence.jpg" alt="Immeuble de bureaux contemporain" width="1600" height="1067" loading="lazy">
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="cta">
+          <h2>La première étape commence par un échange.</h2>
+          <a class="btn btn-white" href="contact.html">Demander une étude</a>
         </div>
-        <img src="img/hero.jpg" alt="Volume bâti et périmètre" width="1600" height="1067">
-      </li>
-      <li class="beat" id="p4">
-        <p class="n">04</p>
-        <div>
-          <h2>Consignes de sécurité</h2>
-          <p>Mettre en place des consignes adaptées au fonctionnement du site et aux situations à signaler. Un cadre d’intervention lisible, partagé avec le client.</p>
-        </div>
-        <img src="img/agents.jpg" alt="Cadre d’intervention sur site" width="1600" height="1067">
-      </li>
-      <li class="beat" id="p5">
-        <p class="n">05</p>
-        <div>
-          <h2>Déploiement</h2>
-          <p>Affecter les agents et assurer leur briefing avant la prise de poste. Le déploiement transmet le site, les consignes et les attentes.</p>
-        </div>
-        <img src="img/presence.jpg" alt="Présence d’un agent sur le site" width="1600" height="1067">
-      </li>
-      <li class="beat" id="p6">
-        <p class="n">06</p>
-        <div>
-          <h2>Suivi</h2>
-          <p>Contrôler l’exécution des consignes, suivre les anomalies et maintenir un échange régulier avec le client. Ajuster lorsque les besoins évoluent.</p>
-        </div>
-        <img src="img/city-night.jpg" alt="Veille nocturne sur la ville" width="1600" height="1067">
-      </li>
-    </ol>
-    <p class="actions"><a class="btn btn-light" href="contact.html">Demander une étude</a></p>
+      </div>
+    </section>
   </main>
 
   <footer class="foot">
-    <p><strong>Vé Garde</strong> · El Jadida</p>
-    <p><a href="mentions-legales.html">Mentions légales</a></p>
+    <div class="wrap">
+      <div>
+        <p class="brand">Vé Garde</p>
+        <p>Sécurité privée · Gardiennage · Surveillance<br>El Jadida, Maroc</p>
+      </div>
+      <nav aria-label="Pied de page">
+        <a href="services.html">Services</a>
+        <a href="approche.html">Notre approche</a>
+        <a href="secteurs.html">Secteurs</a>
+        <a href="contact.html">Contact</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+      </nav>
+      <p class="legal"><span>© <span data-year>2026</span> Vé Garde. Tous droits réservés.</span></p>
+    </div>
   </footer>
   <script src="js/main.js"></script>
 </body>
