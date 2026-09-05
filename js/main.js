@@ -71,7 +71,12 @@
       event.preventDefault();
       event.stopPropagation();
       if (!form.checkValidity()) {
-        form.reportValidity();
+        if (status) {
+          status.hidden = false;
+          status.textContent = "Merci de renseigner les champs obligatoires avant l’envoi.";
+        }
+        const invalid = form.querySelector(":invalid");
+        if (invalid) invalid.focus();
         return;
       }
       if (status) {
