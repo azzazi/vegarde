@@ -69,16 +69,17 @@
     const status = form.querySelector("[data-form-status]");
     form.addEventListener("submit", (event) => {
       event.preventDefault();
+      event.stopPropagation();
       if (!form.checkValidity()) {
         form.reportValidity();
         return;
       }
-      form.reset();
       if (status) {
         status.hidden = false;
         status.textContent =
           "Votre demande a bien été enregistrée. Nous vous recontacterons dès que les coordonnées de contact seront activées.";
       }
+      form.reset();
     });
   }
 })();
